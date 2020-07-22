@@ -1,0 +1,5773 @@
+{
+  "id": 1010,
+  "name": "Topic",
+  "type": {
+    "id": 5,
+    "name": "Cardtype",
+    "type": "Cardtype",
+    "url": "https://wikirate.org/Cardtype.json",
+    "codename": "cardtype"
+  },
+  "url": "https://wikirate.org/Topic.json",
+  "codename": "wikirate_topic",
+  "items": [
+    {
+      "id": 5821691,
+      "name": "Abuse",
+      "type": "Topic",
+      "url": "https://wikirate.org/Abuse.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 45466,
+      "name": "Accident",
+      "type": "Topic",
+      "url": "https://wikirate.org/Accident.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 22719,
+      "name": "advertising",
+      "type": "Topic",
+      "url": "https://wikirate.org/advertising.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 2718970,
+      "name": "Affordability and Access",
+      "type": "Topic",
+      "url": "https://wikirate.org/Affordability_and_Access.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 14431,
+      "name": "Africa",
+      "type": "Topic",
+      "url": "https://wikirate.org/Africa.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 6
+    },
+    {
+      "id": 1787640,
+      "name": "agriculture",
+      "type": "Topic",
+      "url": "https://wikirate.org/agriculture.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 2
+    },
+    {
+      "id": 2651586,
+      "name": "Air & Climate",
+      "type": "Topic",
+      "url": "https://wikirate.org/Air_Climate.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 25,
+      "projects": 1
+    },
+    {
+      "id": 627,
+      "name": "Air Pollution",
+      "type": "Topic",
+      "url": "https://wikirate.org/Air_Pollution.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14388,
+      "name": "Angora",
+      "type": "Topic",
+      "url": "https://wikirate.org/Angora.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1246,
+      "name": "Animal Welfare",
+      "type": "Topic",
+      "url": "https://wikirate.org/Animal_Welfare.json",
+      "content": "",
+      "bookmarkers": 2,
+      "metrics": 13,
+      "projects": 3
+    },
+    {
+      "id": 40491,
+      "name": "Annual report",
+      "type": "Topic",
+      "url": "https://wikirate.org/Annual_report.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 30,
+      "projects": 2
+    },
+    {
+      "id": 1175365,
+      "name": "Apparel",
+      "type": "Topic",
+      "url": "https://wikirate.org/Apparel.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 34,
+      "projects": 5
+    },
+    {
+      "id": 16185,
+      "name": "Asia",
+      "type": "Topic",
+      "url": "https://wikirate.org/Asia.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 40675,
+      "name": "Audit",
+      "type": "Topic",
+      "url": "https://wikirate.org/Audit.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 17,
+      "projects": 0
+    },
+    {
+      "id": 5982707,
+      "name": "Benchmarks",
+      "type": "Topic",
+      "url": "https://wikirate.org/Benchmarks.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 169530,
+      "name": "Biodiesel",
+      "type": "Topic",
+      "url": "https://wikirate.org/Biodiesel.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5821685,
+      "name": "Biodiversity",
+      "type": "Topic",
+      "url": "https://wikirate.org/Biodiversity.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 4583505,
+      "name": "Black Economic Empowerment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Black_Economic_Empowerment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 34524,
+      "name": "Bribery",
+      "type": "Topic",
+      "url": "https://wikirate.org/Bribery.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 13993,
+      "name": "Burma",
+      "type": "Topic",
+      "url": "https://wikirate.org/Burma.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 828899,
+      "name": "Business Model",
+      "type": "Topic",
+      "url": "https://wikirate.org/Business_Model.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 34318,
+      "name": "California",
+      "type": "Topic",
+      "url": "https://wikirate.org/California.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 21740,
+      "name": "Carbon Disclosuer Project CDP",
+      "type": "Topic",
+      "url": "https://wikirate.org/Carbon_Disclosuer_Project_CDP.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14378,
+      "name": "carbon-negative",
+      "type": "Topic",
+      "url": "https://wikirate.org/carbon_negative.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 19099,
+      "name": "CDP report",
+      "type": "Topic",
+      "url": "https://wikirate.org/CDP_report.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 831197,
+      "name": "Cement",
+      "type": "Topic",
+      "url": "https://wikirate.org/Cement.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1404561,
+      "name": "Ceres",
+      "type": "Topic",
+      "url": "https://wikirate.org/Ceres.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1173538,
+      "name": "Chemical Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Chemical_Management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 3318137,
+      "name": "Child Development",
+      "type": "Topic",
+      "url": "https://wikirate.org/Child_Development.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 11349,
+      "name": "Child Labour",
+      "type": "Topic",
+      "url": "https://wikirate.org/Child_Labour.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 1787639,
+      "name": "chocolate",
+      "type": "Topic",
+      "url": "https://wikirate.org/chocolate.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 5405523,
+      "name": "Circular Economy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Circular_Economy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 2718688,
+      "name": "Clean and Renewable Energy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Clean_and_Renewable_Energy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 13,
+      "projects": 2
+    },
+    {
+      "id": 14418,
+      "name": "clean energy",
+      "type": "Topic",
+      "url": "https://wikirate.org/clean_energy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 586,
+      "name": "Climate Change",
+      "type": "Topic",
+      "url": "https://wikirate.org/Climate_Change.json",
+      "content": "",
+      "bookmarkers": 6,
+      "metrics": 55,
+      "projects": 6
+    },
+    {
+      "id": 175650,
+      "name": "closure",
+      "type": "Topic",
+      "url": "https://wikirate.org/closure.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1785583,
+      "name": "Cloud",
+      "type": "Topic",
+      "url": "https://wikirate.org/Cloud.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1240,
+      "name": "CO2 Emissions",
+      "type": "Topic",
+      "url": "https://wikirate.org/CO2_Emissions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 3
+    },
+    {
+      "id": 14417,
+      "name": "Cocoa",
+      "type": "Topic",
+      "url": "https://wikirate.org/Cocoa.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 45549,
+      "name": "Code of Ethics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Code_of_Ethics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 13,
+      "projects": 1
+    },
+    {
+      "id": 22125,
+      "name": "Coffee",
+      "type": "Topic",
+      "url": "https://wikirate.org/Coffee.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2893240,
+      "name": "Collection of User Information",
+      "type": "Topic",
+      "url": "https://wikirate.org/Collection_of_User_Information.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 801955,
+      "name": "Collective Bargaining",
+      "type": "Topic",
+      "url": "https://wikirate.org/Collective_Bargaining.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 17,
+      "projects": 1
+    },
+    {
+      "id": 1085307,
+      "name": "Communications",
+      "type": "Topic",
+      "url": "https://wikirate.org/Communications.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1204,
+      "name": "Community",
+      "type": "Topic",
+      "url": "https://wikirate.org/Community.json",
+      "codename": "community",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 12,
+      "projects": 1
+    },
+    {
+      "id": 799221,
+      "name": "Community Upliftment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Community_Upliftment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 828985,
+      "name": "Company restructuring",
+      "type": "Topic",
+      "url": "https://wikirate.org/Company_restructuring.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 831181,
+      "name": "Competition",
+      "type": "Topic",
+      "url": "https://wikirate.org/Competition.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 800867,
+      "name": "Compliance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Compliance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 15,
+      "projects": 0
+    },
+    {
+      "id": 886417,
+      "name": "Compliance Challenges",
+      "type": "Topic",
+      "url": "https://wikirate.org/Compliance_Challenges.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 33911,
+      "name": "Conflict Free Sourcing Initiative (CFSI)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Conflict_Free_Sourcing_Initiative_CFSI.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 1
+    },
+    {
+      "id": 18350,
+      "name": "Conflict Minerals",
+      "type": "Topic",
+      "url": "https://wikirate.org/Conflict_Minerals.json",
+      "content": "",
+      "bookmarkers": 2,
+      "metrics": 53,
+      "projects": 5
+    },
+    {
+      "id": 2709918,
+      "name": "Conservation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Conservation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1796910,
+      "name": "construction",
+      "type": "Topic",
+      "url": "https://wikirate.org/construction.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 1206,
+      "name": "Consumer and Product Responsibility",
+      "type": "Topic",
+      "url": "https://wikirate.org/Consumer_and_Product_Responsibility.json",
+      "content": "",
+      "bookmarkers": 5,
+      "metrics": 37,
+      "projects": 3
+    },
+    {
+      "id": 5951565,
+      "name": "Consumption",
+      "type": "Topic",
+      "url": "https://wikirate.org/Consumption.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 5821689,
+      "name": "Contracts",
+      "type": "Topic",
+      "url": "https://wikirate.org/Contracts.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 798728,
+      "name": "cooperative",
+      "type": "Topic",
+      "url": "https://wikirate.org/cooperative.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2718916,
+      "name": "Coordination Planning & Governance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Coordination_Planning_Governance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 1079430,
+      "name": "Corporate Accountability",
+      "type": "Topic",
+      "url": "https://wikirate.org/Corporate_Accountability.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 107,
+      "projects": 9
+    },
+    {
+      "id": 1196,
+      "name": "Corporate Governance & Compliance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Corporate_Governance_Compliance.json",
+      "content": "",
+      "bookmarkers": 3,
+      "metrics": 30,
+      "projects": 4
+    },
+    {
+      "id": 799224,
+      "name": "Corporate Social Investment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Corporate_Social_Investment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 2
+    },
+    {
+      "id": 828898,
+      "name": "Corporate Social Responsibility",
+      "type": "Topic",
+      "url": "https://wikirate.org/Corporate_Social_Responsibility.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 36,
+      "projects": 33
+    },
+    {
+      "id": 540055,
+      "name": "Corporate tax",
+      "type": "Topic",
+      "url": "https://wikirate.org/Corporate_tax.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 12,
+      "projects": 1
+    },
+    {
+      "id": 5951815,
+      "name": "Corrective Action",
+      "type": "Topic",
+      "url": "https://wikirate.org/Corrective_Action.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1217,
+      "name": "Corruption",
+      "type": "Topic",
+      "url": "https://wikirate.org/Corruption.json",
+      "content": "<p>{{+subcriteria|titled;item:closed}}</p>",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 806460,
+      "name": "Cost of sales",
+      "type": "Topic",
+      "url": "https://wikirate.org/Cost_of_sales.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 21045,
+      "name": "Cotton Made in Africa (CmiA)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Cotton_Made_in_Africa_CmiA.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 4580063,
+      "name": "Crop management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Crop_management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 799227,
+      "name": "CSI",
+      "type": "Topic",
+      "url": "https://wikirate.org/CSI.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 818750,
+      "name": "CSO",
+      "type": "Topic",
+      "url": "https://wikirate.org/CSO.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1626106,
+      "name": "CSPO",
+      "type": "Topic",
+      "url": "https://wikirate.org/CSPO.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 14429,
+      "name": "CSR",
+      "type": "Topic",
+      "url": "https://wikirate.org/CSR.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 14
+    },
+    {
+      "id": 14399,
+      "name": "CSR report",
+      "type": "Topic",
+      "url": "https://wikirate.org/CSR_report.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 2893231,
+      "name": "Data breaches",
+      "type": "Topic",
+      "url": "https://wikirate.org/Data_breaches.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 14443,
+      "name": "Data Exploitation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Data_Exploitation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 12,
+      "projects": 1
+    },
+    {
+      "id": 17935,
+      "name": "Deforestation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Deforestation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 22713,
+      "name": "design",
+      "type": "Topic",
+      "url": "https://wikirate.org/design.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 774929,
+      "name": "Digital Rights",
+      "type": "Topic",
+      "url": "https://wikirate.org/Digital_Rights.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 73,
+      "projects": 3
+    },
+    {
+      "id": 2718683,
+      "name": "Dining Services",
+      "type": "Topic",
+      "url": "https://wikirate.org/Dining_Services.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 837537,
+      "name": "Direct Greenhouse Gas Emissions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Direct_Greenhouse_Gas_Emissions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 2
+    },
+    {
+      "id": 5821690,
+      "name": "Disciplinary Action",
+      "type": "Topic",
+      "url": "https://wikirate.org/Disciplinary_Action.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 3182656,
+      "name": "Discrimination",
+      "type": "Topic",
+      "url": "https://wikirate.org/Discrimination.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 1
+    },
+    {
+      "id": 807203,
+      "name": "Disposal",
+      "type": "Topic",
+      "url": "https://wikirate.org/Disposal.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2718938,
+      "name": "Diversity & Affordability",
+      "type": "Topic",
+      "url": "https://wikirate.org/Diversity_Affordability.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 0
+    },
+    {
+      "id": 2718943,
+      "name": "Diversity and Equity Coordination",
+      "type": "Topic",
+      "url": "https://wikirate.org/Diversity_and_Equity_Coordination.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 1
+    },
+    {
+      "id": 5821686,
+      "name": "Diversity & Inclusion",
+      "type": "Topic",
+      "url": "https://wikirate.org/Diversity_Inclusion.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 176333,
+      "name": "dodd frank",
+      "type": "Topic",
+      "url": "https://wikirate.org/dodd_frank.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 37627,
+      "name": "e-waste",
+      "type": "Topic",
+      "url": "https://wikirate.org/e_waste.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 1497319,
+      "name": "E02",
+      "type": "Topic",
+      "url": "https://wikirate.org/E02.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 789824,
+      "name": "Economic",
+      "type": "Topic",
+      "url": "https://wikirate.org/Economic.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 5
+    },
+    {
+      "id": 1404562,
+      "name": "Economy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Economy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 588,
+      "name": "Ecosystems & Biodiversity",
+      "type": "Topic",
+      "url": "https://wikirate.org/Ecosystems_Biodiversity.json",
+      "content": "",
+      "bookmarkers": 3,
+      "metrics": 12,
+      "projects": 1
+    },
+    {
+      "id": 14416,
+      "name": "Education",
+      "type": "Topic",
+      "url": "https://wikirate.org/Education.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 5
+    },
+    {
+      "id": 828734,
+      "name": "Effectiveness",
+      "type": "Topic",
+      "url": "https://wikirate.org/Effectiveness.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 831182,
+      "name": "Efficiency",
+      "type": "Topic",
+      "url": "https://wikirate.org/Efficiency.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1021,
+      "name": "Effluents",
+      "type": "Topic",
+      "url": "https://wikirate.org/Effluents.json",
+      "content": "<p>{{+subcriteria|titled;item:closed}}</p>",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 33909,
+      "name": "Electronic Industry Citizenship Coalition (EICC)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Electronic_Industry_Citizenship_Coalition_EICC.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 844758,
+      "name": "Emissions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Emissions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 50,
+      "projects": 3
+    },
+    {
+      "id": 2463442,
+      "name": "emissions management",
+      "type": "Topic",
+      "url": "https://wikirate.org/emissions_management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2706274,
+      "name": "Employed",
+      "type": "Topic",
+      "url": "https://wikirate.org/Employed.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 0
+    },
+    {
+      "id": 2718773,
+      "name": "Employee Commute Modal Split",
+      "type": "Topic",
+      "url": "https://wikirate.org/Employee_Commute_Modal_Split.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1205,
+      "name": "Employee Relations",
+      "type": "Topic",
+      "url": "https://wikirate.org/Employee_Relations.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 1
+    },
+    {
+      "id": 7215,
+      "name": "Employee Safety",
+      "type": "Topic",
+      "url": "https://wikirate.org/Employee_Safety.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 837290,
+      "name": "Energy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Energy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 22,
+      "projects": 3
+    },
+    {
+      "id": 806467,
+      "name": "Energy Costs",
+      "type": "Topic",
+      "url": "https://wikirate.org/Energy_Costs.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 844819,
+      "name": "Energy intensity",
+      "type": "Topic",
+      "url": "https://wikirate.org/Energy_intensity.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 612,
+      "name": "Energy Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Energy_Management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 14,
+      "projects": 2
+    },
+    {
+      "id": 837291,
+      "name": "Energy reduction",
+      "type": "Topic",
+      "url": "https://wikirate.org/Energy_reduction.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 33881,
+      "name": "Energy Star Certification",
+      "type": "Topic",
+      "url": "https://wikirate.org/Energy_Star_Certification.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 39152,
+      "name": "Environment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Environment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 157,
+      "projects": 20
+    },
+    {
+      "id": 2706142,
+      "name": "Environment (Principles of the UN Global Compact)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Environment_Principles_of_the_UN_Global_Compact.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 87,
+      "projects": 1
+    },
+    {
+      "id": 581,
+      "name": "Environmental Ethics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Environmental_Ethics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 3
+    },
+    {
+      "id": 836003,
+      "name": "Environmental laws and regulations",
+      "type": "Topic",
+      "url": "https://wikirate.org/Environmental_laws_and_regulations.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 1233,
+      "name": "Environmental Reporting",
+      "type": "Topic",
+      "url": "https://wikirate.org/Environmental_Reporting.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 34,
+      "projects": 2
+    },
+    {
+      "id": 36153,
+      "name": "enzyme",
+      "type": "Topic",
+      "url": "https://wikirate.org/enzyme.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1523709,
+      "name": "EO1",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1510691,
+      "name": "EO10",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO10.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1521536,
+      "name": "EO11",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO11.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1511469,
+      "name": "EO12",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO12.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1522548,
+      "name": "EO13",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO13.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1497838,
+      "name": "EO2",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO2.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1468512,
+      "name": "EO3",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO3.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1540846,
+      "name": "EO4",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO4.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1468521,
+      "name": "EO5",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO5.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1468540,
+      "name": "EO6",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO6.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1564897,
+      "name": "EO7",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO7.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1614496,
+      "name": "EO8",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO8.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 1500921,
+      "name": "EO9",
+      "type": "Topic",
+      "url": "https://wikirate.org/EO9.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 14401,
+      "name": "Equador",
+      "type": "Topic",
+      "url": "https://wikirate.org/Equador.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2917018,
+      "name": "Equal Opportunity",
+      "type": "Topic",
+      "url": "https://wikirate.org/Equal_Opportunity.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 26,
+      "projects": 0
+    },
+    {
+      "id": 813422,
+      "name": "Equal Pay",
+      "type": "Topic",
+      "url": "https://wikirate.org/Equal_Pay.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 1837908,
+      "name": "ESG",
+      "type": "Topic",
+      "url": "https://wikirate.org/ESG.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 2
+    },
+    {
+      "id": 800462,
+      "name": "Ethics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Ethics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 21,
+      "projects": 1
+    },
+    {
+      "id": 168967,
+      "name": "Ethical Consumer mobile phone ranking",
+      "type": "Topic",
+      "url": "https://wikirate.org/Ethical_Consumer_mobile_phone_ranking.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 19012,
+      "name": "Ethical Tea Partnership (ETP)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Ethical_Tea_Partnership_ETP.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 20908,
+      "name": "EU",
+      "type": "Topic",
+      "url": "https://wikirate.org/EU.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 15992,
+      "name": "EU Organic Products Label",
+      "type": "Topic",
+      "url": "https://wikirate.org/EU_Organic_Products_Label.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 15825,
+      "name": "Europe",
+      "type": "Topic",
+      "url": "https://wikirate.org/Europe.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1392218,
+      "name": "Event Organizers",
+      "type": "Topic",
+      "url": "https://wikirate.org/Event_Organizers.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 28,
+      "projects": 1
+    },
+    {
+      "id": 15993,
+      "name": "Fair Labor Practices and Community Benefits",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fair_Labor_Practices_and_Community_Benefits.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 16032,
+      "name": "Fair Trade USA",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fair_Trade_USA.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 21836,
+      "name": "Fairfood International",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fairfood_International.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 16030,
+      "name": "Fairtrade",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fairtrade.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 20073,
+      "name": "Fareshare",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fareshare.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1175349,
+      "name": "Fashion",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fashion.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 20,
+      "projects": 17
+    },
+    {
+      "id": 842697,
+      "name": "female",
+      "type": "Topic",
+      "url": "https://wikirate.org/female.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 19132,
+      "name": "female empowerment",
+      "type": "Topic",
+      "url": "https://wikirate.org/female_empowerment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 1
+    },
+    {
+      "id": 5768489,
+      "name": "Filling the Gap",
+      "type": "Topic",
+      "url": "https://wikirate.org/Filling_the_Gap.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 88,
+      "projects": 3
+    },
+    {
+      "id": 5768492,
+      "name": "Filling the Gap: Brand Survey",
+      "type": "Topic",
+      "url": "https://wikirate.org/Filling_the_Gap_Brand_Survey.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 38,
+      "projects": 2
+    },
+    {
+      "id": 5768495,
+      "name": "Filling the Gap: Worker Survey",
+      "type": "Topic",
+      "url": "https://wikirate.org/Filling_the_Gap_Worker_Survey.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 47,
+      "projects": 2
+    },
+    {
+      "id": 818753,
+      "name": "Financial",
+      "type": "Topic",
+      "url": "https://wikirate.org/Financial.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 40,
+      "projects": 0
+    },
+    {
+      "id": 4580064,
+      "name": "Financial benefits",
+      "type": "Topic",
+      "url": "https://wikirate.org/Financial_benefits.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836001,
+      "name": "Fines",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fines.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 19562,
+      "name": "Florida",
+      "type": "Topic",
+      "url": "https://wikirate.org/Florida.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2718714,
+      "name": "Food and Beverage Purchasing",
+      "type": "Topic",
+      "url": "https://wikirate.org/Food_and_Beverage_Purchasing.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 798799,
+      "name": "Food Fraud",
+      "type": "Topic",
+      "url": "https://wikirate.org/Food_Fraud.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 13830,
+      "name": "Food Scandal",
+      "type": "Topic",
+      "url": "https://wikirate.org/Food_Scandal.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1663175,
+      "name": "food security",
+      "type": "Topic",
+      "url": "https://wikirate.org/food_security.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1785593,
+      "name": "Food Waste",
+      "type": "Topic",
+      "url": "https://wikirate.org/Food_Waste.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 1
+    },
+    {
+      "id": 15848,
+      "name": "Foodservice",
+      "type": "Topic",
+      "url": "https://wikirate.org/Foodservice.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 17881,
+      "name": "Forest Stewardship Council (FSC)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Forest_Stewardship_Council_FSC.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2896898,
+      "name": "Forestry",
+      "type": "Topic",
+      "url": "https://wikirate.org/Forestry.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 800531,
+      "name": "Forestry Value Add",
+      "type": "Topic",
+      "url": "https://wikirate.org/Forestry_Value_Add.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 801952,
+      "name": "freedom of association",
+      "type": "Topic",
+      "url": "https://wikirate.org/freedom_of_association.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 18258,
+      "name": "Friends of the Earth",
+      "type": "Topic",
+      "url": "https://wikirate.org/Friends_of_the_Earth.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5821695,
+      "name": "FTI2020",
+      "type": "Topic",
+      "url": "https://wikirate.org/FTI2020.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 116,
+      "projects": 0
+    },
+    {
+      "id": 836955,
+      "name": "Fuel Consumption",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fuel_Consumption.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 1
+    },
+    {
+      "id": 836956,
+      "name": "Fuel consumption from non-renewable sources",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fuel_consumption_from_non_renewable_sources.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 840598,
+      "name": "Fuel consumption from renewable sources",
+      "type": "Topic",
+      "url": "https://wikirate.org/Fuel_consumption_from_renewable_sources.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 828701,
+      "name": "Further Education & Training",
+      "type": "Topic",
+      "url": "https://wikirate.org/Further_Education_Training.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 843685,
+      "name": "G4",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 836103,
+      "name": "G4-10",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_10.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 0
+    },
+    {
+      "id": 845460,
+      "name": "G4-10a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_10a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 845461,
+      "name": "G4-10a2",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_10a2.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 813502,
+      "name": "G4-11",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_11.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 813608,
+      "name": "G4-54",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_54.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1087174,
+      "name": "G4-EC",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EC.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 800629,
+      "name": "g4-ec1",
+      "type": "Topic",
+      "url": "https://wikirate.org/g4_ec1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 814932,
+      "name": "G4-EC5",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EC5.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 814046,
+      "name": "G4-EC6",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EC6.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 815024,
+      "name": "G4-EC9",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EC9.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 987968,
+      "name": "G4-EN",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 57,
+      "projects": 1
+    },
+    {
+      "id": 1468444,
+      "name": "G4-EN1",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 801468,
+      "name": "G4-EN10",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN10.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1510077,
+      "name": "G4-EN11",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN11.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1501036,
+      "name": "G4-EN13",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN13.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1510915,
+      "name": "G4-EN14",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN14.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 826620,
+      "name": "G4-EN15",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN15.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 826916,
+      "name": "G4-EN15-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN15_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 826634,
+      "name": "G4-EN16",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN16.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 849649,
+      "name": "G4-EN17",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN17.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836044,
+      "name": "G4-EN18",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN18.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 844779,
+      "name": "G4-EN19",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN19.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 844780,
+      "name": "G4-EN19-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN19_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 800933,
+      "name": "G4-EN2",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN2.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836612,
+      "name": "G4-EN20",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN20.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836613,
+      "name": "G4-EN20-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN20_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 813972,
+      "name": "G4-EN21",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN21.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 836801,
+      "name": "G4-EN21-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN21_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836727,
+      "name": "G4-EN21-a1",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN21_a1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836654,
+      "name": "G4-EN21-a2",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN21_a2.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836692,
+      "name": "G4-EN21-a3",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN21_a3.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836718,
+      "name": "G4-EN21-a4",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN21_a4.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836800,
+      "name": "G4-EN21-a6",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN21_a6.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836059,
+      "name": "G4-EN22",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN22.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 810587,
+      "name": "G4-EN23",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN23.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 0
+    },
+    {
+      "id": 837189,
+      "name": "G4-EN23-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN23_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 848776,
+      "name": "G4-EN23a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN23a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 849139,
+      "name": "G4-EN24",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN24.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 807186,
+      "name": "G4-EN25",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN25.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1521144,
+      "name": "G4-EN26",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN26.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1521376,
+      "name": "G4-EN28",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN28.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 801385,
+      "name": "G4-EN29",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN29.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 789860,
+      "name": "G4-EN3",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN3.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 846587,
+      "name": "G4-EN3-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN3_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 885867,
+      "name": "G4-EN3-e",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN3_e.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1522312,
+      "name": "G4-EN31",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN31.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1522671,
+      "name": "G4-EN34",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN34.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 1523019,
+      "name": "G4-EN4",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN4.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 844817,
+      "name": "G4-EN5",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN5.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 844818,
+      "name": "G4-EN5-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN5_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 837288,
+      "name": "G4-EN6",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN6.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 837289,
+      "name": "G4-EN6-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN6_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 813693,
+      "name": "G4-EN7",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN7.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 709167,
+      "name": "G4-EN8",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_EN8.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 994505,
+      "name": "G4-HR",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 11,
+      "projects": 0
+    },
+    {
+      "id": 845905,
+      "name": "G4-HR1",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 845901,
+      "name": "G4-HR10",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR10.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836304,
+      "name": "G4-HR12",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR12.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 844793,
+      "name": "G4-HR12-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR12_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 881507,
+      "name": "G4-HR12-b",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR12_b.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 881509,
+      "name": "G4-HR12-c",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR12_c.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836319,
+      "name": "G4-HR3",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR3.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 802433,
+      "name": "G4-HR4",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR4.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 849177,
+      "name": "G4-HR6",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR6.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 849178,
+      "name": "G4-HR6-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR6_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2551124,
+      "name": "G4-HR8",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_HR8.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 991012,
+      "name": "G4-LA",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 20,
+      "projects": 0
+    },
+    {
+      "id": 845908,
+      "name": "G4-LA1",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 829066,
+      "name": "G4-LA12",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA12.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836072,
+      "name": "G4-LA13",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA13.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 845727,
+      "name": "G4-LA14",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA14.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836746,
+      "name": "G4-LA16",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA16.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 836757,
+      "name": "G4-LA16-a",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA16_a.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836997,
+      "name": "G4-LA16-b",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA16_b.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 836998,
+      "name": "G4-LA16-b1",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA16_b1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2311446,
+      "name": "G4-LA3",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA3.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 17,
+      "projects": 0
+    },
+    {
+      "id": 815105,
+      "name": "G4-LA5",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA5.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 815205,
+      "name": "G4-LA6",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA6.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 849026,
+      "name": "G4-LA7",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA7.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 845685,
+      "name": "G4-LA9",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_LA9.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1104919,
+      "name": "G4-PR",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_PR.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 16,
+      "projects": 1
+    },
+    {
+      "id": 2736112,
+      "name": "G4-PR2",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_PR2.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 2722244,
+      "name": "G4-PR4",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_PR4.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 2722434,
+      "name": "G4-PR7",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_PR7.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 2722238,
+      "name": "G4-PR8",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_PR8.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 2722424,
+      "name": "G4-PR9",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_PR9.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1104907,
+      "name": "G4-SO",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_SO.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 3448055,
+      "name": "G4-SO-5",
+      "type": "Topic",
+      "url": "https://wikirate.org/G4_SO_5.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 42231,
+      "name": "Gay marriage",
+      "type": "Topic",
+      "url": "https://wikirate.org/Gay_marriage.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5460624,
+      "name": "GDPR",
+      "type": "Topic",
+      "url": "https://wikirate.org/GDPR.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 900291,
+      "name": "Gender",
+      "type": "Topic",
+      "url": "https://wikirate.org/Gender.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 24,
+      "projects": 2
+    },
+    {
+      "id": 22196,
+      "name": "Gender equality",
+      "type": "Topic",
+      "url": "https://wikirate.org/Gender_equality.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 26,
+      "projects": 9
+    },
+    {
+      "id": 836043,
+      "name": "GHG",
+      "type": "Topic",
+      "url": "https://wikirate.org/GHG.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 844773,
+      "name": "GHG emissions intensity ratio",
+      "type": "Topic",
+      "url": "https://wikirate.org/GHG_emissions_intensity_ratio.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 17579,
+      "name": "Global Business Initiative on Human Rights",
+      "type": "Topic",
+      "url": "https://wikirate.org/Global_Business_Initiative_on_Human_Rights.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1637828,
+      "name": "Global Compact Principle Requirements",
+      "type": "Topic",
+      "url": "https://wikirate.org/Global_Compact_Principle_Requirements.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 33913,
+      "name": "Global e-Sustainability Initiative",
+      "type": "Topic",
+      "url": "https://wikirate.org/Global_e_Sustainability_Initiative.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 21039,
+      "name": "Global Organic Textile Standard (GOTS)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Global_Organic_Textile_Standard_GOTS.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 14966,
+      "name": "GMO",
+      "type": "Topic",
+      "url": "https://wikirate.org/GMO.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 4579948,
+      "name": "Good Governance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Good_Governance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 800459,
+      "name": "Governance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Governance.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 81,
+      "projects": 1
+    },
+    {
+      "id": 1785582,
+      "name": "Government",
+      "type": "Topic",
+      "url": "https://wikirate.org/Government.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 837062,
+      "name": "GR-LA16-b2",
+      "type": "Topic",
+      "url": "https://wikirate.org/GR_LA16_b2.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 829734,
+      "name": "Greenhouse Gas",
+      "type": "Topic",
+      "url": "https://wikirate.org/Greenhouse_Gas.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 1
+    },
+    {
+      "id": 14427,
+      "name": "GRI",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 185,
+      "projects": 57
+    },
+    {
+      "id": 3780588,
+      "name": "GRI 102: General Disclosures",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_102_General_Disclosures.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 10,
+      "projects": 0
+    },
+    {
+      "id": 3787600,
+      "name": "GRI 103: Management Approach",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_103_Management_Approach.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 3781116,
+      "name": "GRI 201: Economic Performance",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_201_Economic_Performance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 3780976,
+      "name": "GRI 202: Market Presence",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_202_Market_Presence.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 3787080,
+      "name": "GRI 204: Procurement Practices",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_204_Procurement_Practices.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3448054,
+      "name": "GRI 205-3",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_205_3.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3787109,
+      "name": "GRI 301: Materials",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_301_Materials.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 3787584,
+      "name": "GRI 302: Energy",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_302_Energy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 0
+    },
+    {
+      "id": 3755209,
+      "name": "GRI 303-3",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_303_3.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 3787115,
+      "name": "GRI 303: Water and Effluents",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_303_Water_and_Effluents.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 8,
+      "projects": 0
+    },
+    {
+      "id": 3787274,
+      "name": "GRI 304: Biodiversity",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_304_Biodiversity.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3787280,
+      "name": "GRI 305: Emissions",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_305_Emissions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 10,
+      "projects": 0
+    },
+    {
+      "id": 3448037,
+      "name": "GRI 306-5",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_306_5.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3787385,
+      "name": "GRI 306: Effluents and Waste",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_306_Effluents_and_Waste.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 13,
+      "projects": 0
+    },
+    {
+      "id": 3787442,
+      "name": "GRI 307: Environmental Compliance",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_307_Environmental_Compliance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3787592,
+      "name": "GRI 308: Supplier Environmental Assessment",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_308_Supplier_Environmental_Assessment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 3787628,
+      "name": "GRI 401: Employment",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_401_Employment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 0
+    },
+    {
+      "id": 3787630,
+      "name": "GRI 403: Occupational Health and Safety",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_403_Occupational_Health_and_Safety.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 3787632,
+      "name": "GRI 404: Training and Education",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_404_Training_and_Education.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 3787618,
+      "name": "GRI 405: Diversity and Equal Opportunity",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_405_Diversity_and_Equal_Opportunity.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3787620,
+      "name": "GRI 406: Non-discrimination",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_406_Non_discrimination.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3787625,
+      "name": "GRI 409: Forced or Compulsory Labor",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_409_Forced_or_Compulsory_Labor.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 3448084,
+      "name": "GRI 411-1",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_411_1.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3787608,
+      "name": "GRI 412: Human Rights Assessment",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_412_Human_Rights_Assessment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 3787613,
+      "name": "GRI 414: Supplier Social Assessment",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_414_Supplier_Social_Assessment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 3787634,
+      "name": "GRI 416: Customer Health and Safety",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_416_Customer_Health_and_Safety.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 3787636,
+      "name": "GRI 417: Marketing and Labeling",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_417_Marketing_and_Labeling.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 3787638,
+      "name": "GRI 418: Customer Privacy",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_418_Customer_Privacy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 3787640,
+      "name": "GRI 419: Socioeconomic Compliance",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_419_Socioeconomic_Compliance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 2917703,
+      "name": "GRI - G4",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_G4.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 5509025,
+      "name": "GRI Standard",
+      "type": "Topic",
+      "url": "https://wikirate.org/GRI_Standard.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 31,
+      "projects": 0
+    },
+    {
+      "id": 5951820,
+      "name": "Grievance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Grievance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 5821687,
+      "name": "Harassment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Harassment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 2718719,
+      "name": "Hazardous Waste Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Hazardous_Waste_Management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 11496,
+      "name": "Health and safety",
+      "type": "Topic",
+      "url": "https://wikirate.org/Health_and_safety.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 27,
+      "projects": 4
+    },
+    {
+      "id": 4579957,
+      "name": "Horsemeat Scandal",
+      "type": "Topic",
+      "url": "https://wikirate.org/Horsemeat_Scandal.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1172,
+      "name": "Human Rights",
+      "type": "Topic",
+      "url": "https://wikirate.org/Human_Rights.json",
+      "content": "",
+      "bookmarkers": 6,
+      "metrics": 135,
+      "projects": 30
+    },
+    {
+      "id": 168219,
+      "name": "Human trafficking",
+      "type": "Topic",
+      "url": "https://wikirate.org/Human_trafficking.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 5950888,
+      "name": "Impact",
+      "type": "Topic",
+      "url": "https://wikirate.org/Impact.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1684,
+      "name": "Inclusive Business",
+      "type": "Topic",
+      "url": "https://wikirate.org/Inclusive_Business.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 2
+    },
+    {
+      "id": 1155584,
+      "name": "Income",
+      "type": "Topic",
+      "url": "https://wikirate.org/Income.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 14422,
+      "name": "Indigenous peoples",
+      "type": "Topic",
+      "url": "https://wikirate.org/Indigenous_peoples.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 844757,
+      "name": "Indirect Greenhouse Gas Emissions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Indirect_Greenhouse_Gas_Emissions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 2
+    },
+    {
+      "id": 46373,
+      "name": "Indonesian Palm Oil Pledge (IPOP)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Indonesian_Palm_Oil_Pledge_IPOP.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836086,
+      "name": "Injury Rate",
+      "type": "Topic",
+      "url": "https://wikirate.org/Injury_Rate.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 831196,
+      "name": "Innovation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Innovation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 61342,
+      "name": "Institute for Global Labour and Human Rights",
+      "type": "Topic",
+      "url": "https://wikirate.org/Institute_for_Global_Labour_and_Human_Rights.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2665493,
+      "name": "Institutional Boundary",
+      "type": "Topic",
+      "url": "https://wikirate.org/Institutional_Boundary.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 2665492,
+      "name": "Institutional Characteristics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Institutional_Characteristics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 11,
+      "projects": 0
+    },
+    {
+      "id": 175478,
+      "name": "Integrated Reporting",
+      "type": "Topic",
+      "url": "https://wikirate.org/Integrated_Reporting.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 5822658,
+      "name": "International Standards",
+      "type": "Topic",
+      "url": "https://wikirate.org/International_Standards.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 175103,
+      "name": "investigative report",
+      "type": "Topic",
+      "url": "https://wikirate.org/investigative_report.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5099421,
+      "name": "ISO 20400 Sustainable Procurement",
+      "type": "Topic",
+      "url": "https://wikirate.org/ISO_20400_Sustainable_Procurement.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 45990,
+      "name": "ISO14001:2004",
+      "type": "Topic",
+      "url": "https://wikirate.org/ISO14001_2004.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 17459,
+      "name": "ISO26000",
+      "type": "Topic",
+      "url": "https://wikirate.org/ISO26000.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14413,
+      "name": "Ivory Coast",
+      "type": "Topic",
+      "url": "https://wikirate.org/Ivory_Coast.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 2917142,
+      "name": "Knowledge",
+      "type": "Topic",
+      "url": "https://wikirate.org/Knowledge.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 18,
+      "projects": 0
+    },
+    {
+      "id": 22759,
+      "name": "Korea",
+      "type": "Topic",
+      "url": "https://wikirate.org/Korea.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 885892,
+      "name": "Labor Practices",
+      "type": "Topic",
+      "url": "https://wikirate.org/Labor_Practices.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 17,
+      "projects": 1
+    },
+    {
+      "id": 175262,
+      "name": "labour conflict",
+      "type": "Topic",
+      "url": "https://wikirate.org/labour_conflict.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 789836,
+      "name": "Labour Practices and Decent Work",
+      "type": "Topic",
+      "url": "https://wikirate.org/Labour_Practices_and_Decent_Work.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 8,
+      "projects": 4
+    },
+    {
+      "id": 22714,
+      "name": "law",
+      "type": "Topic",
+      "url": "https://wikirate.org/law.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1002717,
+      "name": "Laws and Regulations",
+      "type": "Topic",
+      "url": "https://wikirate.org/Laws_and_Regulations.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 996671,
+      "name": "Laws & Regulations",
+      "type": "Topic",
+      "url": "https://wikirate.org/Laws_Regulations.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 22,
+      "projects": 24
+    },
+    {
+      "id": 14372,
+      "name": "Leather",
+      "type": "Topic",
+      "url": "https://wikirate.org/Leather.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 14397,
+      "name": "LGBT",
+      "type": "Topic",
+      "url": "https://wikirate.org/LGBT.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 5412850,
+      "name": "Lobbying",
+      "type": "Topic",
+      "url": "https://wikirate.org/Lobbying.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 806738,
+      "name": "Local Sourcing",
+      "type": "Topic",
+      "url": "https://wikirate.org/Local_Sourcing.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 1
+    },
+    {
+      "id": 2896935,
+      "name": "Location",
+      "type": "Topic",
+      "url": "https://wikirate.org/Location.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 2718693,
+      "name": "Low Impact Dining",
+      "type": "Topic",
+      "url": "https://wikirate.org/Low_Impact_Dining.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 806291,
+      "name": "manufacturing",
+      "type": "Topic",
+      "url": "https://wikirate.org/manufacturing.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 21,
+      "projects": 0
+    },
+    {
+      "id": 15994,
+      "name": "Marine Stewardship Council (MSC)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Marine_Stewardship_Council_MSC.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 11499,
+      "name": "Marketing and communication",
+      "type": "Topic",
+      "url": "https://wikirate.org/Marketing_and_communication.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 1
+    },
+    {
+      "id": 18266,
+      "name": "Mascot",
+      "type": "Topic",
+      "url": "https://wikirate.org/Mascot.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 42440,
+      "name": "Maternity policy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Maternity_policy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 4579975,
+      "name": "Media Transparency",
+      "type": "Topic",
+      "url": "https://wikirate.org/Media_Transparency.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 174507,
+      "name": "Mercury",
+      "type": "Topic",
+      "url": "https://wikirate.org/Mercury.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14411,
+      "name": "Mica",
+      "type": "Topic",
+      "url": "https://wikirate.org/Mica.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 808602,
+      "name": "Mineral Prices",
+      "type": "Topic",
+      "url": "https://wikirate.org/Mineral_Prices.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 40381,
+      "name": "Minimum pay",
+      "type": "Topic",
+      "url": "https://wikirate.org/Minimum_pay.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 40380,
+      "name": "Minimum wage",
+      "type": "Topic",
+      "url": "https://wikirate.org/Minimum_wage.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 42377,
+      "name": "missleading marketing",
+      "type": "Topic",
+      "url": "https://wikirate.org/missleading_marketing.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1827959,
+      "name": "Modern Slavery",
+      "type": "Topic",
+      "url": "https://wikirate.org/Modern_Slavery.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 41,
+      "projects": 24
+    },
+    {
+      "id": 1827958,
+      "name": "Modern Slavery Act",
+      "type": "Topic",
+      "url": "https://wikirate.org/Modern_Slavery_Act.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 27,
+      "projects": 25
+    },
+    {
+      "id": 845019,
+      "name": "Monetary Sanctions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Monetary_Sanctions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 168779,
+      "name": "money laundering",
+      "type": "Topic",
+      "url": "https://wikirate.org/money_laundering.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5952075,
+      "name": "Monitoring",
+      "type": "Topic",
+      "url": "https://wikirate.org/Monitoring.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3756499,
+      "name": "National Voluntary Guidelines (NVGs)",
+      "type": "Topic",
+      "url": "https://wikirate.org/National_Voluntary_Guidelines_NVGs.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 15,
+      "projects": 2
+    },
+    {
+      "id": 1084992,
+      "name": "Natural Resources",
+      "type": "Topic",
+      "url": "https://wikirate.org/Natural_Resources.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 1
+    },
+    {
+      "id": 1195,
+      "name": "Natural Resource Use",
+      "type": "Topic",
+      "url": "https://wikirate.org/Natural_Resource_Use.json",
+      "content": "",
+      "bookmarkers": 7,
+      "metrics": 32,
+      "projects": 2
+    },
+    {
+      "id": 38772,
+      "name": "neonicotinoids",
+      "type": "Topic",
+      "url": "https://wikirate.org/neonicotinoids.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 16843,
+      "name": "New Zeland",
+      "type": "Topic",
+      "url": "https://wikirate.org/New_Zeland.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 836000,
+      "name": "Non-compliance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Non_compliance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 0
+    },
+    {
+      "id": 836002,
+      "name": "Non-monetary sanctions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Non_monetary_sanctions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 36163,
+      "name": "North America",
+      "type": "Topic",
+      "url": "https://wikirate.org/North_America.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14392,
+      "name": "NPE",
+      "type": "Topic",
+      "url": "https://wikirate.org/NPE.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 42378,
+      "name": "nutrition",
+      "type": "Topic",
+      "url": "https://wikirate.org/nutrition.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1837907,
+      "name": "NVGs",
+      "type": "Topic",
+      "url": "https://wikirate.org/NVGs.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 42376,
+      "name": "obesity",
+      "type": "Topic",
+      "url": "https://wikirate.org/obesity.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1242,
+      "name": "Oceans",
+      "type": "Topic",
+      "url": "https://wikirate.org/Oceans.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 16844,
+      "name": "Oceania",
+      "type": "Topic",
+      "url": "https://wikirate.org/Oceania.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14375,
+      "name": "Off-shore tax haven",
+      "type": "Topic",
+      "url": "https://wikirate.org/Off_shore_tax_haven.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14421,
+      "name": "Oil contamination",
+      "type": "Topic",
+      "url": "https://wikirate.org/Oil_contamination.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 1625700,
+      "name": "Olympics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Olympics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 2651585,
+      "name": "Operations",
+      "type": "Topic",
+      "url": "https://wikirate.org/Operations.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 17,
+      "projects": 0
+    },
+    {
+      "id": 2671252,
+      "name": "Operational Characteristics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Operational_Characteristics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 0
+    },
+    {
+      "id": 14924,
+      "name": "Organics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Organics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14383,
+      "name": "Organic cotton",
+      "type": "Topic",
+      "url": "https://wikirate.org/Organic_cotton.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 1
+    },
+    {
+      "id": 798906,
+      "name": "Other Habitat Destruction",
+      "type": "Topic",
+      "url": "https://wikirate.org/Other_Habitat_Destruction.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14272,
+      "name": "Oxfam",
+      "type": "Topic",
+      "url": "https://wikirate.org/Oxfam.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 5821693,
+      "name": "Packaging",
+      "type": "Topic",
+      "url": "https://wikirate.org/Packaging.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 14433,
+      "name": "Palm Oil",
+      "type": "Topic",
+      "url": "https://wikirate.org/Palm_Oil.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 8,
+      "projects": 1
+    },
+    {
+      "id": 5821688,
+      "name": "Parental Leave",
+      "type": "Topic",
+      "url": "https://wikirate.org/Parental_Leave.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 3150073,
+      "name": "Pay",
+      "type": "Topic",
+      "url": "https://wikirate.org/Pay.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 38771,
+      "name": "pesticides",
+      "type": "Topic",
+      "url": "https://wikirate.org/pesticides.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1797195,
+      "name": "Petroleum",
+      "type": "Topic",
+      "url": "https://wikirate.org/Petroleum.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 5445148,
+      "name": "PF-1.11",
+      "type": "Topic",
+      "url": "https://wikirate.org/PF_1_11.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3318138,
+      "name": "PF-15.2",
+      "type": "Topic",
+      "url": "https://wikirate.org/PF_15_2.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 798585,
+      "name": "Philanthropy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Philanthropy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1231,
+      "name": "Philanthropy & Collaboration with NGOs",
+      "type": "Topic",
+      "url": "https://wikirate.org/Philanthropy_Collaboration_with_NGOs.json",
+      "content": "",
+      "bookmarkers": 2,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 2718698,
+      "name": "Planning & Administration",
+      "type": "Topic",
+      "url": "https://wikirate.org/Planning_Administration.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 17,
+      "projects": 0
+    },
+    {
+      "id": 4583572,
+      "name": "Platinum mining",
+      "type": "Topic",
+      "url": "https://wikirate.org/Platinum_mining.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1655698,
+      "name": "Policy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Policy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 72,
+      "projects": 0
+    },
+    {
+      "id": 1187549,
+      "name": "Political",
+      "type": "Topic",
+      "url": "https://wikirate.org/Political.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1230,
+      "name": "Political Accountability",
+      "type": "Topic",
+      "url": "https://wikirate.org/Political_Accountability.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 13,
+      "projects": 0
+    },
+    {
+      "id": 590,
+      "name": "Pollution & Toxics",
+      "type": "Topic",
+      "url": "https://wikirate.org/Pollution_Toxics.json",
+      "content": "",
+      "bookmarkers": 6,
+      "metrics": 47,
+      "projects": 2
+    },
+    {
+      "id": 36339,
+      "name": "poverty",
+      "type": "Topic",
+      "url": "https://wikirate.org/poverty.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1637670,
+      "name": "Principle 1: Human Rights",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_1_Human_Rights.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 1637706,
+      "name": "Principle 10: Anti-Corruption",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_10_Anti_Corruption.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 1
+    },
+    {
+      "id": 1637674,
+      "name": "Principle 2: Human Rights",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_2_Human_Rights.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 1
+    },
+    {
+      "id": 1637678,
+      "name": "Principle 3: Labour",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_3_Labour.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 1637682,
+      "name": "Principle 4: Labour",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_4_Labour.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1637686,
+      "name": "Principle 5: Labour",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_5_Labour.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1637690,
+      "name": "Principle 6: Labour",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_6_Labour.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1637694,
+      "name": "Principle 7: Environment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_7_Environment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1637698,
+      "name": "Principle 8: Environment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_8_Environment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1637702,
+      "name": "Principle 9: Environment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Principle_9_Environment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14415,
+      "name": "Privacy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Privacy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 49,
+      "projects": 2
+    },
+    {
+      "id": 1785584,
+      "name": "Private Communication",
+      "type": "Topic",
+      "url": "https://wikirate.org/Private_Communication.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1185206,
+      "name": "Procurement",
+      "type": "Topic",
+      "url": "https://wikirate.org/Procurement.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 887261,
+      "name": "Profit",
+      "type": "Topic",
+      "url": "https://wikirate.org/Profit.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 18250,
+      "name": "Rainforest Action Network",
+      "type": "Topic",
+      "url": "https://wikirate.org/Rainforest_Action_Network.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 17456,
+      "name": "Rainforest Alliance",
+      "type": "Topic",
+      "url": "https://wikirate.org/Rainforest_Alliance.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 600,
+      "name": "Rainforest Destruction",
+      "type": "Topic",
+      "url": "https://wikirate.org/Rainforest_Destruction.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14436,
+      "name": "Rana Plaza",
+      "type": "Topic",
+      "url": "https://wikirate.org/Rana_Plaza.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5821696,
+      "name": "Recruitment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Recruitment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 800578,
+      "name": "Recycled",
+      "type": "Topic",
+      "url": "https://wikirate.org/Recycled.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 8,
+      "projects": 1
+    },
+    {
+      "id": 800887,
+      "name": "Recycled Materials",
+      "type": "Topic",
+      "url": "https://wikirate.org/Recycled_Materials.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 0
+    },
+    {
+      "id": 14435,
+      "name": "recycled paper",
+      "type": "Topic",
+      "url": "https://wikirate.org/recycled_paper.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 22720,
+      "name": "registered",
+      "type": "Topic",
+      "url": "https://wikirate.org/registered.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5952074,
+      "name": "Remediation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Remediation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 1078070,
+      "name": "Reporting",
+      "type": "Topic",
+      "url": "https://wikirate.org/Reporting.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 13,
+      "projects": 19
+    },
+    {
+      "id": 800465,
+      "name": "Reputation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Reputation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 3756767,
+      "name": "Responsible Investment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Responsible_Investment.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 31,
+      "projects": 2
+    },
+    {
+      "id": 5821692,
+      "name": "Restricted Substances",
+      "type": "Topic",
+      "url": "https://wikirate.org/Restricted_Substances.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1392397,
+      "name": "Revenue",
+      "type": "Topic",
+      "url": "https://wikirate.org/Revenue.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 3756589,
+      "name": "Risk Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Risk_Management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 16733,
+      "name": "Round Table on Responsible Soy (RTRS)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Round_Table_on_Responsible_Soy_RTRS.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 16420,
+      "name": "Roundtable on Sustainable Palm Oil (RSPO)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Roundtable_on_Sustainable_Palm_Oil_RSPO.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 15060,
+      "name": "Russian Federation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Russian_Federation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1081233,
+      "name": "Sales",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sales.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 998657,
+      "name": "Sanctions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sanctions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 14438,
+      "name": "Sandblasting",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sandblasting.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 3142636,
+      "name": "Save bees | butterfly | Pollinators in USA - hplcco",
+      "type": "Topic",
+      "url": "https://wikirate.org/Save_bees_butterfly_Pollinators_in_USA_hplcco.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 3142634,
+      "name": "Save the bees campaign in USA",
+      "type": "Topic",
+      "url": "https://wikirate.org/Save_the_bees_campaign_in_USA.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 837538,
+      "name": "Scope 1 GHG emissions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Scope_1_GHG_emissions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 844759,
+      "name": "Scope 2 GHG emissions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Scope_2_GHG_emissions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1654032,
+      "name": "SDGs",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDGs.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 42,
+      "projects": 97
+    },
+    {
+      "id": 2644448,
+      "name": "SDG Relevant Actions",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG_Relevant_Actions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 16,
+      "projects": 0
+    },
+    {
+      "id": 1094740,
+      "name": "SDG1: No Poverty",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG1_No_Poverty.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 15,
+      "projects": 0
+    },
+    {
+      "id": 2552843,
+      "name": "SDG1: No Poverty (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG1_No_Poverty_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1099746,
+      "name": "SDG10: Reduced Inequalities",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG10_Reduced_Inequalities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 29,
+      "projects": 4
+    },
+    {
+      "id": 2552898,
+      "name": "SDG10: Reduced Inequalities (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG10_Reduced_Inequalities_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 2
+    },
+    {
+      "id": 1099750,
+      "name": "SDG11: Sustainable Cities and Communities",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG11_Sustainable_Cities_and_Communities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 2
+    },
+    {
+      "id": 2552909,
+      "name": "SDG11: Sustainable Cities and Communities (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG11_Sustainable_Cities_and_Communities_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1099754,
+      "name": "SDG12: Responsible Consumption and Production",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG12_Responsible_Consumption_and_Production.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 54,
+      "projects": 14
+    },
+    {
+      "id": 2552914,
+      "name": "SDG12: Responsible Consumption and Production (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG12_Responsible_Consumption_and_Production_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 108,
+      "projects": 0
+    },
+    {
+      "id": 1104669,
+      "name": "SDG13: Climate Action",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG13_Climate_Action.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 33,
+      "projects": 18
+    },
+    {
+      "id": 2552919,
+      "name": "SDG13: Climate Action (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG13_Climate_Action_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 66,
+      "projects": 2
+    },
+    {
+      "id": 1104672,
+      "name": "SDG14: Life Below Water",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG14_Life_Below_Water.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 25,
+      "projects": 3
+    },
+    {
+      "id": 2552924,
+      "name": "SDG14: Life Below Water (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG14_Life_Below_Water_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1104675,
+      "name": "SDG15: Life on Land",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG15_Life_on_Land.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 24,
+      "projects": 4
+    },
+    {
+      "id": 2552929,
+      "name": "SDG15: Life on Land (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG15_Life_on_Land_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1104678,
+      "name": "SDG16: Peace, Justice and Strong Institutions",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG16_Peace_Justice_and_Strong_Institutions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 45,
+      "projects": 7
+    },
+    {
+      "id": 2552934,
+      "name": "SDG16: Peace, Justice and Strong Institutions (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG16_Peace_Justice_and_Strong_Institutions_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 1104681,
+      "name": "SDG17: Partnerships for the Goals",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG17_Partnerships_for_the_Goals.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 2
+    },
+    {
+      "id": 2552939,
+      "name": "SDG17: Partnerships for the Goals (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG17_Partnerships_for_the_Goals_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 8,
+      "projects": 0
+    },
+    {
+      "id": 1094743,
+      "name": "SDG2: No Hunger",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG2_No_Hunger.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 3
+    },
+    {
+      "id": 2552848,
+      "name": "SDG2: No Hunger (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG2_No_Hunger_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 1094744,
+      "name": "SDG3: Good Health and Well-being",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG3_Good_Health_and_Well_being.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 39,
+      "projects": 8
+    },
+    {
+      "id": 2552853,
+      "name": "SDG3: Good Health and Well-being (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG3_Good_Health_and_Well_being_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1094771,
+      "name": "SDG4: Quality Education",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG4_Quality_Education.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 10,
+      "projects": 3
+    },
+    {
+      "id": 2552858,
+      "name": "SDG4: Quality Education (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG4_Quality_Education_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 12,
+      "projects": 0
+    },
+    {
+      "id": 1094774,
+      "name": "SDG5: Gender Equality",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG5_Gender_Equality.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 45,
+      "projects": 20
+    },
+    {
+      "id": 2552873,
+      "name": "SDG5: Gender Equality (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG5_Gender_Equality_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 1
+    },
+    {
+      "id": 1094777,
+      "name": "SDG6: Clean Water and Sanitation",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG6_Clean_Water_and_Sanitation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 34,
+      "projects": 7
+    },
+    {
+      "id": 2552878,
+      "name": "SDG6: Clean Water and Sanitation (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG6_Clean_Water_and_Sanitation_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 1
+    },
+    {
+      "id": 1094780,
+      "name": "SDG7: Affordable and Clean Energy",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG7_Affordable_and_Clean_Energy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 19,
+      "projects": 10
+    },
+    {
+      "id": 2552883,
+      "name": "SDG7: Affordable and Clean Energy (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG7_Affordable_and_Clean_Energy_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 22,
+      "projects": 0
+    },
+    {
+      "id": 1094784,
+      "name": "SDG8: Decent Work and Economic Growth",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG8_Decent_Work_and_Economic_Growth.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 104,
+      "projects": 17
+    },
+    {
+      "id": 2552888,
+      "name": "SDG8: Decent Work and Economic Growth (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG8_Decent_Work_and_Economic_Growth_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 4,
+      "projects": 0
+    },
+    {
+      "id": 1094787,
+      "name": "SDG9: Industry, Innovation and Infrastructure",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG9_Industry_Innovation_and_Infrastructure.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 9,
+      "projects": 2
+    },
+    {
+      "id": 2552893,
+      "name": "SDG9: Industry, Innovation and Infrastructure (universities)",
+      "type": "Topic",
+      "url": "https://wikirate.org/SDG9_Industry_Innovation_and_Infrastructure_universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 45179,
+      "name": "Seafood",
+      "type": "Topic",
+      "url": "https://wikirate.org/Seafood.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 852073,
+      "name": "SEC",
+      "type": "Topic",
+      "url": "https://wikirate.org/SEC.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1220309,
+      "name": "Section 1: Planning Communications",
+      "type": "Topic",
+      "url": "https://wikirate.org/Section_1_Planning_Communications.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1220306,
+      "name": "Section 2: Procurement",
+      "type": "Topic",
+      "url": "https://wikirate.org/Section_2_Procurement.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1219121,
+      "name": "Section 3: Resource Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Section_3_Resource_Management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1220312,
+      "name": "Section 4: Access Equity",
+      "type": "Topic",
+      "url": "https://wikirate.org/Section_4_Access_Equity.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14220,
+      "name": "Shrimps",
+      "type": "Topic",
+      "url": "https://wikirate.org/Shrimps.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 828702,
+      "name": "Skills Development",
+      "type": "Topic",
+      "url": "https://wikirate.org/Skills_Development.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1573832,
+      "name": "Slavery",
+      "type": "Topic",
+      "url": "https://wikirate.org/Slavery.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 801870,
+      "name": "Social",
+      "type": "Topic",
+      "url": "https://wikirate.org/Social.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 33,
+      "projects": 0
+    },
+    {
+      "id": 788713,
+      "name": "Social Investment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Social_Investment.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 3,
+      "projects": 2
+    },
+    {
+      "id": 1785581,
+      "name": "Social Media",
+      "type": "Topic",
+      "url": "https://wikirate.org/Social_Media.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 1234,
+      "name": "Social Reporting",
+      "type": "Topic",
+      "url": "https://wikirate.org/Social_Reporting.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 18912,
+      "name": "Socially and Environmentally Responsible Agricultural Practices program (SERAP)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Socially_and_Environmentally_Responsible_Agricultural_Practices_program_SERAP.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 800819,
+      "name": "Socio-economic development",
+      "type": "Topic",
+      "url": "https://wikirate.org/Socio_economic_development.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1200,
+      "name": "Soil and Landscape Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Soil_and_Landscape_Management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 3941,
+      "name": "Solar Energy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Solar_Energy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1080772,
+      "name": "Sourcing",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sourcing.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 12,
+      "projects": 2
+    },
+    {
+      "id": 21280,
+      "name": "South America",
+      "type": "Topic",
+      "url": "https://wikirate.org/South_America.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 45465,
+      "name": "South Korea",
+      "type": "Topic",
+      "url": "https://wikirate.org/South_Korea.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 16658,
+      "name": "Soy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Soy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 17137,
+      "name": "Soy Moratorium",
+      "type": "Topic",
+      "url": "https://wikirate.org/Soy_Moratorium.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 36152,
+      "name": "sport",
+      "type": "Topic",
+      "url": "https://wikirate.org/sport.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 1
+    },
+    {
+      "id": 800514,
+      "name": "Stakeholders",
+      "type": "Topic",
+      "url": "https://wikirate.org/Stakeholders.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 0
+    },
+    {
+      "id": 802116,
+      "name": "Stakeholder Engagement",
+      "type": "Topic",
+      "url": "https://wikirate.org/Stakeholder_Engagement.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 36899,
+      "name": "Students and Scholars Against Corporate Misbehavior (Sacom)",
+      "type": "Topic",
+      "url": "https://wikirate.org/Students_and_Scholars_Against_Corporate_Misbehavior_Sacom.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2718768,
+      "name": "Student Commute Modal Split",
+      "type": "Topic",
+      "url": "https://wikirate.org/Student_Commute_Modal_Split.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 2916410,
+      "name": "Student Engagement",
+      "type": "Topic",
+      "url": "https://wikirate.org/Student_Engagement.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 14254,
+      "name": "Sugar",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sugar.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 20862,
+      "name": "Sumatra",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sumatra.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1614497,
+      "name": "Suppliers",
+      "type": "Topic",
+      "url": "https://wikirate.org/Suppliers.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 55,
+      "projects": 1
+    },
+    {
+      "id": 19304,
+      "name": "Supplier Code of Conduct",
+      "type": "Topic",
+      "url": "https://wikirate.org/Supplier_Code_of_Conduct.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 5822657,
+      "name": "Supplier Policy",
+      "type": "Topic",
+      "url": "https://wikirate.org/Supplier_Policy.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 614,
+      "name": "Supply Chain",
+      "type": "Topic",
+      "url": "https://wikirate.org/Supply_Chain.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 130,
+      "projects": 1
+    },
+    {
+      "id": 1232,
+      "name": "Supply Chain Transparency",
+      "type": "Topic",
+      "url": "https://wikirate.org/Supply_Chain_Transparency.json",
+      "content": "",
+      "bookmarkers": 6,
+      "metrics": 130,
+      "projects": 41
+    },
+    {
+      "id": 2718978,
+      "name": "Support for Underrepresented Groups",
+      "type": "Topic",
+      "url": "https://wikirate.org/Support_for_Underrepresented_Groups.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 14377,
+      "name": "Sustainability",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sustainability.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 28,
+      "projects": 53
+    },
+    {
+      "id": 2718921,
+      "name": "Sustainability Coordination",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sustainability_Coordination.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 843684,
+      "name": "Sustainability reporting",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sustainability_reporting.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 3
+    },
+    {
+      "id": 21791,
+      "name": "Sustainable Apparel Coalition",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sustainable_Apparel_Coalition.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1085358,
+      "name": "Sustainable Economic Growth",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sustainable_Economic_Growth.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 0
+    },
+    {
+      "id": 2718987,
+      "name": "Sustainable Investment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sustainable_Investment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 16,
+      "projects": 3
+    },
+    {
+      "id": 1625657,
+      "name": "Sustainable Supply Chain",
+      "type": "Topic",
+      "url": "https://wikirate.org/Sustainable_Supply_Chain.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 28,
+      "projects": 4
+    },
+    {
+      "id": 14125,
+      "name": "Syria",
+      "type": "Topic",
+      "url": "https://wikirate.org/Syria.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 37729,
+      "name": "Taiwan",
+      "type": "Topic",
+      "url": "https://wikirate.org/Taiwan.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14373,
+      "name": "Tax",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tax.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 14,
+      "projects": 1
+    },
+    {
+      "id": 5399232,
+      "name": "Tax Evasion",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tax_Evasion.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 166047,
+      "name": "TCO Certified",
+      "type": "Topic",
+      "url": "https://wikirate.org/TCO_Certified.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 16809,
+      "name": "Tea",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tea.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14381,
+      "name": "Technology",
+      "type": "Topic",
+      "url": "https://wikirate.org/Technology.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 1
+    },
+    {
+      "id": 2893230,
+      "name": "Telecommunications",
+      "type": "Topic",
+      "url": "https://wikirate.org/Telecommunications.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 6238,
+      "name": "Tetley",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tetley.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1173482,
+      "name": "Textile Industry",
+      "type": "Topic",
+      "url": "https://wikirate.org/Textile_Industry.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 8,
+      "projects": 2
+    },
+    {
+      "id": 15750,
+      "name": "The Netherlands",
+      "type": "Topic",
+      "url": "https://wikirate.org/The_Netherlands.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 22058,
+      "name": "The World Cocoa Foundation",
+      "type": "Topic",
+      "url": "https://wikirate.org/The_World_Cocoa_Foundation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 46246,
+      "name": "Tibet",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tibet.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 15209,
+      "name": "Tide",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tide.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 18419,
+      "name": "Tobacco",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tobacco.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 885704,
+      "name": "Top 10 CSR Ranking",
+      "type": "Topic",
+      "url": "https://wikirate.org/Top_10_CSR_Ranking.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1173481,
+      "name": "Toxic Pollution",
+      "type": "Topic",
+      "url": "https://wikirate.org/Toxic_Pollution.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 801958,
+      "name": "Trade Unions",
+      "type": "Topic",
+      "url": "https://wikirate.org/Trade_Unions.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 996655,
+      "name": "Training & Education",
+      "type": "Topic",
+      "url": "https://wikirate.org/Training_Education.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 7,
+      "projects": 0
+    },
+    {
+      "id": 1226,
+      "name": "Transparency",
+      "type": "Topic",
+      "url": "https://wikirate.org/Transparency.json",
+      "content": "",
+      "bookmarkers": 1,
+      "metrics": 84,
+      "projects": 5
+    },
+    {
+      "id": 807213,
+      "name": "Transport",
+      "type": "Topic",
+      "url": "https://wikirate.org/Transport.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 1
+    },
+    {
+      "id": 2718763,
+      "name": "Transportation",
+      "type": "Topic",
+      "url": "https://wikirate.org/Transportation.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 42597,
+      "name": "Tuna",
+      "type": "Topic",
+      "url": "https://wikirate.org/Tuna.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14385,
+      "name": "US",
+      "type": "Topic",
+      "url": "https://wikirate.org/US.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 3414372,
+      "name": "UNCTAD",
+      "type": "Topic",
+      "url": "https://wikirate.org/UNCTAD.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    },
+    {
+      "id": 799681,
+      "name": "Unfair Trading",
+      "type": "Topic",
+      "url": "https://wikirate.org/Unfair_Trading.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1637726,
+      "name": "UNGC",
+      "type": "Topic",
+      "url": "https://wikirate.org/UNGC.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 1
+    },
+    {
+      "id": 39366,
+      "name": "UNHCR",
+      "type": "Topic",
+      "url": "https://wikirate.org/UNHCR.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 2896872,
+      "name": "Universities",
+      "type": "Topic",
+      "url": "https://wikirate.org/Universities.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 2
+    },
+    {
+      "id": 2671517,
+      "name": "University Comparison",
+      "type": "Topic",
+      "url": "https://wikirate.org/University_Comparison.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 6,
+      "projects": 2
+    },
+    {
+      "id": 2551732,
+      "name": "University Metrics",
+      "type": "Topic",
+      "url": "https://wikirate.org/University_Metrics.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 275,
+      "projects": 2
+    },
+    {
+      "id": 175803,
+      "name": "unpaid wages",
+      "type": "Topic",
+      "url": "https://wikirate.org/unpaid_wages.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 5445009,
+      "name": "Urban Redevelopment",
+      "type": "Topic",
+      "url": "https://wikirate.org/Urban_Redevelopment.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14167,
+      "name": "USA",
+      "type": "Topic",
+      "url": "https://wikirate.org/USA.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 22145,
+      "name": "UTZ",
+      "type": "Topic",
+      "url": "https://wikirate.org/UTZ.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 15567,
+      "name": "Vatican",
+      "type": "Topic",
+      "url": "https://wikirate.org/Vatican.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 14414,
+      "name": "Wages",
+      "type": "Topic",
+      "url": "https://wikirate.org/Wages.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 51,
+      "projects": 6
+    },
+    {
+      "id": 4579966,
+      "name": "Wage fixing",
+      "type": "Topic",
+      "url": "https://wikirate.org/Wage_fixing.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 1198,
+      "name": "Waste Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Waste_Management.json",
+      "content": "",
+      "bookmarkers": 4,
+      "metrics": 38,
+      "projects": 8
+    },
+    {
+      "id": 36029,
+      "name": "Water",
+      "type": "Topic",
+      "url": "https://wikirate.org/Water.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 21,
+      "projects": 3
+    },
+    {
+      "id": 14430,
+      "name": "WaterAid",
+      "type": "Topic",
+      "url": "https://wikirate.org/WaterAid.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 613,
+      "name": "Water Management",
+      "type": "Topic",
+      "url": "https://wikirate.org/Water_Management.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 12,
+      "projects": 3
+    },
+    {
+      "id": 1181161,
+      "name": "Water Mandate",
+      "type": "Topic",
+      "url": "https://wikirate.org/Water_Mandate.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 2737851,
+      "name": "Water Pollution",
+      "type": "Topic",
+      "url": "https://wikirate.org/Water_Pollution.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 36131,
+      "name": "Water Rights",
+      "type": "Topic",
+      "url": "https://wikirate.org/Water_Rights.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 0
+    },
+    {
+      "id": 803218,
+      "name": "Water Usage",
+      "type": "Topic",
+      "url": "https://wikirate.org/Water_Usage.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 5,
+      "projects": 2
+    },
+    {
+      "id": 5951312,
+      "name": "Whistleblowing",
+      "type": "Topic",
+      "url": "https://wikirate.org/Whistleblowing.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 2896899,
+      "name": "Wildlife",
+      "type": "Topic",
+      "url": "https://wikirate.org/Wildlife.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 0,
+      "projects": 1
+    },
+    {
+      "id": 1213,
+      "name": "Working Conditions and Benefits",
+      "type": "Topic",
+      "url": "https://wikirate.org/Working_Conditions_and_Benefits.json",
+      "content": "",
+      "bookmarkers": 13,
+      "metrics": 116,
+      "projects": 6
+    },
+    {
+      "id": 5821694,
+      "name": "Working Hours",
+      "type": "Topic",
+      "url": "https://wikirate.org/Working_Hours.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 3,
+      "projects": 0
+    },
+    {
+      "id": 1185207,
+      "name": "World Bank",
+      "type": "Topic",
+      "url": "https://wikirate.org/World_Bank.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 1,
+      "projects": 0
+    },
+    {
+      "id": 4585139,
+      "name": "Zero Discharge of Hazardous Chemicals",
+      "type": "Topic",
+      "url": "https://wikirate.org/Zero_Discharge_of_Hazardous_Chemicals.json",
+      "content": "",
+      "bookmarkers": 0,
+      "metrics": 2,
+      "projects": 0
+    }
+  ],
+  "links": [
+
+  ],
+  "ancestors": [
+
+  ],
+  "html_url": "https://wikirate.org/Topic"
+}

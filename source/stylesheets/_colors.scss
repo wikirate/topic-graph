@@ -1,0 +1,168 @@
+$orange: #fb4922;
+$yellow: #f9fe9c;
+$pink: #fcc9fd;
+$navy: #1d1d2f;
+$medium-grey: #e9e4e3;
+$light-grey: #f4f2f2;
+$white: #fff;
+$fushia: #ed40d9;
+$blue: #223366;
+$light-blue: #32437d;
+$lighter-blue: #7C8DC4;
+$other-blue: #4a588c;
+$medium-blue: #112053;
+$sky-blue: #5A6FB7;
+
+.food {
+  fill: #fdbf41;
+  color: #fdbf41;
+}
+
+.housing {
+  fill: $orange;
+  color: $orange;
+}
+
+.health-care {
+  fill: $fushia;
+  color: $fushia;
+}
+
+.education {
+  fill: #8774db;
+  color: #8774db;
+}
+
+.clothing {
+  fill: #4493d0;
+  color: #4493d0;
+}
+
+.transportation {
+  fill: #01b5a6;
+  color: #01b5a6;
+}
+
+.savings {
+  fill: #62ac5b;
+  color: #62ac5b;
+}
+
+$table-color: $medium-grey;
+
+$body-bg: $blue;
+//$body-color: $yellow;
+//$card-bg: $navy;
+//$card-header-bg: $navy;
+
+.red {
+  color: $orange;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.light-grey {
+  color: $light-grey;
+}
+
+.medium-grey {
+  color: $medium-grey;
+}
+
+.red-bg {
+  background-color: $orange;
+}
+
+.orange {
+  background-color: $orange;
+  color: $yellow;
+}
+
+.navy-bg {
+  background-color: $navy;
+  color: $white;
+}
+
+.blue-bg {
+  background-color: $blue;
+  color: $white;
+}
+
+.light-blue-bg {
+  background-color: $light-blue;
+  color: $table-color;
+}
+
+.medium-blue-bg {
+  background-color: $medium-blue;
+  color: $table-color;
+}
+
+.sky-blue-bg {
+  background-color: $sky-blue;
+  color: $table-color;
+}
+
+.lighter-blue-bg {
+  background-color: $lighter-blue;
+  color: $table-color;
+}
+
+.other-blue-bg {
+  background-color: $other-blue;
+  color: $table-color;
+}
+
+.white-bg {
+  background-color: $white;
+  color: #000000;
+}
+
+.fushia-bg {
+  background-color: $fushia;
+}
+
+.black-bg, .black-btn {
+  background-color: #000 !important;
+  color: $light-grey !important;
+}
+
+.black-btn {
+  border-color: #000 !important;
+}
+
+.black {
+  color: #000 !important;
+}
+
+.fushia {
+  color: $fushia;
+}
+
+.pink {
+  color: $pink;
+}
+
+.pink-bg {
+  background-color: $pink;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.yellow-bg {
+  background-color: $yellow !important;
+  color: $orange !important;
+}
+
+.grey-bg {
+  background-color: $medium-grey;
+  color: $orange;
+}
+
+.white {
+  color: $white !important;
+}
