@@ -1,0 +1,57 @@
+$.fn.select2.defaults.set("theme", "bootstrap4")
+
+#API_HOST = "https://wikirate.org"
+API_HOST = "data"
+METRIC_URL = "#{API_HOST}/Metric.json"
+TOPIC_URL = "#{API_HOST}/topic.json"
+
+NODE_THRESHOLD = 15 # Number of metrics tagged with a topic needed to establish a node
+EDGE_THRESHOLD = 10 # Number of connecting metrics between topics needed to establish an edge
+
+topicGraph = null
+
+$(document).ready ->
+  container = document.getElementById("topicgraph")
+  initGraph(metrics, topics, container)
+  # loadGraph("topicgraph")
+
+  $("body").on "change", "._edge-threshold", ->
+    topicGraph.setEdges($(this).val())
+    topicGraph.render()
+
+  $("body").on "change", "._node-threshold", ->
+    topicGraph.setNodes($(this).val())
+    topicGraph.render()
+
+  $("body").on "change", "._font-size", ->
+    topicGraph.font_size = $(this).val()
+    topicGraph.render()
+
+initGraph = (metrics, topics, container) ->
+  topicGraph = new TopicGraph(metrics, topics, container)
+  topicGraph.setEdges(EDGE_THRESHOLD)
+  topicGraph.setNodes(NODE_THRESHOLD)
+  $("._edge-threshold").val(EDGE_THRESHOLD)
+  $("._node-threshold").val(NODE_THRESHOLD)
+  $("._font-size").val(topicGraph.font_size)
+  topicGraph.render()
+
+loadGraph = (containerId) ->
+  $.ajax(
+    url: METRIC_URL,
+    cache: false,
+    dataType: "json",
+    type: "GET",
+    crossDomain: true,
+    contentType: "application/json",
+    headers: {
+      "accept": "application/json",
+      "Access-Control-Allow-Origin":"*",
+      "Access-Control-Allow-Headers": "x-requested-with"
+  }).done (metricData) ->
+    $.ajax(url: TOPIC_URL, cache: false, dataType: "json", crossDomain: true, "headers": {
+      "accept": "application/json",
+      "Access-Control-Allow-Origin":"*"
+    }).done (topicData) ->
+      container = document.getElementById("topicgraph")
+      initGraph(metricData, topicData, container)

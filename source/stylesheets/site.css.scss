@@ -6,7 +6,6 @@ html {
 }
 
 $primary: #ed40d9;
-$border-radius: 0;
 
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -81,17 +80,6 @@ body {
 }
 
 
-
-
-._score-desc.score-1 {
-  .score-1 {
-    display: block;
-  }
-  .score-2 {
-
-  }
-}
-
 h1 {
   font-family: 'ptf_nordic_stdnormal' !important;
   text-transform: uppercase;
@@ -119,65 +107,9 @@ h6 {
   text-transform: uppercase;
 }
 
-.brand {
-  font-size: 0.7rem;
-  .modal-body {
-    font-size: 1rem;
-  }
-  color: $medium-grey;
-  h6 {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-  }
-
-  dl {
-    font-size: 0.8rem;
-  }
-
-  a {
-    color: $pink;
-  }
-}
-
-._brand-search {
-  border-radius: 0;
-}
-
 .section {
   border-top: 2px solid $white;
   padding-top: 20px;
-}
-
-#brand-select {
-  max-width: 200px;
-}
-
-.brand-profile .showcase-details {
-  display: none;
-}
-
-.btn-primary, .btn-outline-primary {
-  border-color: $fushia;
-  border-radius: 15px;
-  text-transform: uppercase;
-  font-family: 'Karla', sans-serif;
-}
-
-.btn-outline-primary {
-  color: $fushia !important;
-}
-
-.btn-outline-primary:hover {
-  color: $pink !important;
-}
-
-.btn-primary {
-  color: $pink;
-  background-color: $fushia;
-}
-
-.btn-sm {
-  font-size: 0.7rem;
 }
 
 .narrow {
@@ -201,84 +133,13 @@ h6 {
   font-family: 'ptf_nordic_stdnormal';
 }
 
-#circle {
-  width: 150px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
 
 .side-bar-image {
   max-width: 150px;
 }
 
-.card-text {
-  color: #000;
-}
-
 .list-style-none > li {
   list-style: none;
-}
-
-.drop-shadow {
-  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.32);
-  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.32);
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.32);
-}
-
-.input-group {
-  flex-wrap: nowrap !important;
-
-  select {
-    width: 100%;
-    min-width: 100%;
-  }
-}
-
-.template {
-  display: none !important;
-}
-
-.select2-results__options--nested {
-  margin-left: 15px !important;
-}
-
-.input-group-text .fa {
-  // color: #181715;;
-}
-
-.input-group-prepend {
-    margin-right: -2px;
-}
-
-// for consistent input size and font size
-.form-control {
-    padding: 0.4999rem 1rem;
-    font-size: 1rem;
-}
-
-// for consistent placeholder color
-input {
-  &::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: rgba(0, 0, 0, 0.5) !important;
-    font-size: 1rem;
-  }
-  &::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(0, 0, 0, 0.5) !important;
-    font-size: 1rem;
-  }
-  &:-ms-input-placeholder {
-    /* IE 10+ */
-    color: rgba(0, 0, 0, 0.5) !important;
-    font-size: 1rem;
-  }
-  &:-moz-placeholder, &::placeholder {
-    /* Firefox 18- */
-    color: rgba(0, 0, 0, 0.5) !important;
-    font-size: 1rem;
-  }
 }
 
 .elevate-1 {
@@ -289,93 +150,6 @@ input {
   border-bottom: 2px $white solid;
 }
 
-.search-form {
-  max-width: 250px;
-  width: 100%;
-}
 
-.middle-text {
-  margin: 0 15%;
-  .lead {
-    line-height: 1.5em;
-    margin-top: 1em;
-  }
-  p, .red-quote {
-    font-weight: normal;
-    line-height: 1.7;
-    margin: 2em 0;
-    font-size: 0.9em;
-  }
-  .red-quote {
-    font-size: 1.4em;
-    border-left: 2px solid $orange;
-    padding-left: 1em;
-    color: $orange;
-  }
-  img {
-    max-width: 100%;
-  }
-  li {
-    font-size: 0.9em;
-    margin: .5em 0
-  }
-}
-.container > img {
-  width: 100%;
-}
 
-.citation {
-  font-size: 0.75em;
-  text-transform: uppercase;
-  margin-top: 1.3em;
-}
 
-.text-on-image {
-  margin: 1em 0 2em 0;
-  .quote-on-image {
-    padding: 1em 2em;
-    max-width: 80%;
-    color: $white;
-    font-size: 1.5em;
-  }
-  background-size: 100%;
-}
-
-.red-head {
-  color: $orange;
-  font-weight: bold;
-  border-top: 2px solid $orange;
-  margin-top: 1em;
-  padding: 1em 0 0.5em 0;
-}
-
-.bar {
-  display: flex;
-  flex-direction: row;
-  padding: 0.5em;
-  margin: 1em 0 2em 0;
-  .bar-icon {
-    width: 50px;
-  }
-}
-
-.no-data {
-  opacity: 60%;
-}
-
-.top-banner {
-  position: relative;
-  .top-banner-image img {
-    max-width: 100%;
-  }
-  .top-banner-text {
-    position: absolute;
-    text-align: center;
-    color: #fff;
-    top: 50%;
-    width: 100%;
-  }
-}
-.pointer {
-  cursor: help;
-}

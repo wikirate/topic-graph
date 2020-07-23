@@ -1,8 +1,27 @@
 %body
   = partial "partials/header"
-  %main{:role => "main"}
-    = section :white do
-      #topicgraph
+  %main.white-bg.container-fluid{:role => "main"}
+    .row
+      .col-9
+        #topicgraph
+      .col-3
+        %form
+          .form-group
+            .label.mr-1 Node threshold
+            %input.form-control._node-threshold.mr-3{type: "text", placeholder: "10"}
+            %small.form-text.text-muted
+              Number of metrics tagged with a topic needed to establish a node
+          .form-group
+            .label.mr1 Edge threshold
+            %input.form-control._edge-threshold{type: "text"}
+            %small.form-text.text-muted
+              Number of connecting metrics between topics needed to establish an edge
+          .form-group
+            .label.mr-1 Font size
+            %input.form-control._font-size{type: "text"}
+          .form-group.form-check
+            %input#exampleCheck1.form-check-input{:type => "checkbox"}/
+            %label.form-check-label{:for => "exampleCheck1"} Check me out
 
   = partial "partials/shared/footer"
 

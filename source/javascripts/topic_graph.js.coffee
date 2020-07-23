@@ -1,8 +1,13 @@
 LINK_TARGET_HOST = "https://wikirate.org"
 
 class window.TopicGraph
-  METRICS_THRESHOLD = 20
-  constructor: (@metricData, @topicData) ->
+  constructor: (metricData, topicData, @container) ->
+    @topic_ids = {}
+    @topic_connections = {}
+    @nodes = []
+    @edges = []
+    @font_size = 20
+
     @example_topic = {
       "id": 45466,
       "name": "Accident",
@@ -48,38 +53,53 @@ class window.TopicGraph
       "answers_url": "https://wikirate.org/2020WoB+Women_on_Board+Answer.json"
     }
 
-    @nodes = []
+    @topics = topicData.items
+
+    for item in @topics
+      @topic_ids[item.name] = item.id
+
+    self = this
+    for item in metricData.items
+        if item.topics.length > 1
+          ids = item.topics.map (topic) -> self.topic_ids[topic]
+            .sort()
+          for id1, i in ids
+            for id2 in ids[i+1..]
+              @topic_connections[id1] ?= {}
+              @topic_connections[id1][id2] ?= 0
+              @topic_connections[id1][id2] += 1
+
+  setEdges: (edge_threshold = EDGE_THRESHOLD) ->
     @edges = []
-    @topic_ids = {}
-    for item in @topicData.items
-        if item.metrics >= METRICS_THRESHOLD
-          @nodes.push {
-            id: item.id,
-            label: item.name,
-            value: item.metrics
-            group: 1
+    for id1, other_ids of @topic_connections
+      for id2, value of other_ids
+        if @topic_connections[id1][id2] > edge_threshold
+          @edges.push {
+            from: id1
+            to: id2
+            value: value
           }
-          @topic_ids[item.name] = item.id
 
-    for item in @metricData.items
-        if item.topics.length > 1 and item.topics.length < 10
-          for topic, i in item.topics
-            for other_topic in item.topics[i+1..]
-              @edges.push {
-                from: @topic_ids[topic]
-                to: @topic_ids[other_topic]
-                value: 1
-              }
+  setNodes: (node_threshold = NODE_THRESHOLD) ->
+    @nodes = []
+    for topic in @topics
+      if topic.metrics >= node_threshold
+        @nodes.push {
+          id: topic.id,
+          label: topic.name,
+          value: topic.metrics
+        }
 
-  render: (container) ->
-    data = @metricData
+  render: () ->
     data =
       nodes: @nodes
       edges: @edges
     options =
       nodes:
         shape: 'dot'
-        size: 16
+        size: 32
+        font:
+          size: @font_size
       physics:
         forceAtlas2Based:
           gravitationalConstant: -26
@@ -90,5 +110,4 @@ class window.TopicGraph
         solver: 'forceAtlas2Based'
         timestep: 0.35
         stabilization: iterations: 150
-
-    new (vis.Network)(container, data, options)
+    new vis.Network(@container, data, options)
