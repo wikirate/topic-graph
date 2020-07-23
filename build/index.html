@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Topic Graph</title>
+
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style type="text/css">
+      #topicgraph {
+        width: 900px;
+        height: 900px;
+        border: 1px solid lightgray;
+      }
+    </style>
+
+    <link href="/stylesheets/font-awesome.min.css" rel="stylesheet" />
+    <link href="/stylesheets/select2.min.css" rel="stylesheet" />
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/select2.full.min.js"></script>
+    <script src="/javascripts/topic_graph.js"></script>
+    <script src="/javascripts/site.js"></script>
+
+  </head>
+  <body>
+    <body>
+<header>
+<div class='collapse red-bg' id='navbarHeader'>
+<div class='container'>
+<div class='row red-bg'>
+<div class='col-sm-8 col-md-7 py-4'>
+<h4 class='text-white'>
+translation missing: en.learn_more
+</h4>
+<ul class='list-unstyled'>
+<li>
+<a class='text-white' href='/living_wage.html'>
+translation missing: en.menu_living_wage
+</a>
+</li>
+<li>
+<a class='text-white' href='/gender.html'>
+translation missing: en.menu_gender
+</a>
+</li>
+<li>
+translation missing: en.menu_transparency
+</li>
+<li>
+<a class='text-white' href='/take_action.html'>
+translation missing: en.menu_take_action
+</a>
+</li>
+<!-- /%li -->
+<!-- /  %a.text-white{:href => "/resources.html"} -->
+<!-- /    = t('menu_resources') -->
+</ul>
+</div>
+<div class='col-sm-4 offset-md-1 py-4'>
+<h4 class='text-white'>
+translation missing: en.about
+</h4>
+<ul class='list-unstyled'>
+<li>
+<a class='text-white' href='/about_us.html'>
+translation missing: en.menu_about_fashion_checker
+</a>
+</li>
+<li>
+<a class='text-white' href='/our_demands.html'>
+translation missing: en.menu_our_demands
+</a>
+</li>
+<li>
+<a class='text-white' href='/who_are_we.html'>
+translation missing: en.menu_who_we_are
+</a>
+</li>
+<li>
+<a class='text-white' href='/methodology.html'>
+translation missing: en.menu_methodology
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='navbar navbar-dark red-bg shadow-sm'>
+<a class='navbar-brand d-flex align-items-center' href='/'>
+<img height='50px' src='images/wikirate-logo.png' width='auto'>
+</a>
+<div class='navbar-nav-scroll'>
+Topic Graph
+</div>
+<div class='navbar-nav ml-md-auto'>
+<button aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation' class='navbar-toggler' data-target='#navbarHeader' data-toggle='collapse' type='button'>
+<span class='navbar-toggler-icon'></span>
+</button>
+</div>
+</div>
+</header>
+
+<main class='white-bg container-fluid' role='main'>
+<div class='row'>
+<div class='col-9'>
+<div id='topicgraph'></div>
+</div>
+<div class='col-3'>
+<form>
+<div class='form-group'>
+<div class='label mr-1'>Node threshold</div>
+<input class='form-control _node-threshold mr-3' placeholder='10' type='text'>
+<small class='form-text text-muted'>
+Number of metrics tagged with a topic needed to establish a node
+</small>
+</div>
+<div class='form-group'>
+<div class='label mr1'>Edge threshold</div>
+<input class='form-control _edge-threshold' type='text'>
+<small class='form-text text-muted'>
+Number of connecting metrics between topics needed to establish an edge
+</small>
+</div>
+<div class='form-group'>
+<div class='label mr-1'>Font size</div>
+<input class='form-control _font-size' type='text'>
+</div>
+<div class='form-group form-check'>
+<input class='form-check-input' id='exampleCheck1' type='checkbox'>
+<label class='form-check-label' for='exampleCheck1'>Check me out</label>
+</div>
+</form>
+</div>
+</div>
+</main>
+<div class='black-bg container-fluid'>
+<div class='container py-5'>
+<div class='row small mt-4 text-muted'>
+<div class='col-sm-12 border-top text-center pt-3'>
+<span class='px-2'>Privacy Policy</span>
+|
+<span class='px-2'>Copyright © 2020 Wikirate</span>
+|
+<span class='px-2'>All rights reserved</span>
+</div>
+</div>
+
+</div>
+</div>
+
+</body>
+
+  </body>
+</html>
