@@ -11,6 +11,7 @@ activate :i18n, :mount_at_root => :en # Mount English at root
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :relative_assets
 end
 
 # Layouts
@@ -52,6 +53,8 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+set :site_url, ""
 
 
 string = File.read('data/metric.json')
