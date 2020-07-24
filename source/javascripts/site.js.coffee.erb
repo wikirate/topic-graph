@@ -1,4 +1,4 @@
-$.fn.select2.defaults.set("theme", "bootstrap4")
+# $.fn.select2.defaults.set("theme", "bootstrap4")
 
 #API_HOST = "https://wikirate.org"
 API_HOST = "data"
@@ -13,43 +13,64 @@ $(document).ready ->
   # loadGraph("topicgraph")
 
   $("body").on "change", "._edge-threshold", ->
-    topicGraph.options.edge_threshold = $(this).val()
+    topicGraph.options.edge_threshold = parseFloat($(this).val())
     topicGraph.updateEdges()
     update()
 
   $("body").on "change", "._node-threshold", ->
-    topicGraph.options.node_threshold = $(this).val()
+    topicGraph.options.node_threshold = parseFloat($(this).val())
     topicGraph.updateNodes()
     update()
 
   $("body").on "change", "._font-size", ->
-    topicGraph.options.font_size = $(this).val()
+    topicGraph.options.font_size = parseInt($(this).val())
     update()
 
-  $("body").on "change", "._edge-score", ->
-    topicGraph.options.edges_weighted = this.checked
+  $("body").on "change", "._edge-size", ->
+    topicGraph.options.edge_size = parseFloat($(this).val())
     topicGraph.updateEdges()
+    update()
+
+  $("body").on "change", "._node-size", ->
+    topicGraph.options.node_size = parseFloat($(this).val())
+    topicGraph.updateNodes()
     update()
 
   $("body").on "change", "._colorful", ->
     topicGraph.options.colorful = this.checked
-    debugger
     topicGraph.updateNodes()
     update()
 
+  $("body").on "change", "._connection-formula", ->
+    if $('input[name=formulaRadios]:checked').val() == "simple"
+      topicGraph.options.simple_weight = true
+    else
+      topicGraph.options.simple_weight = false
+    topicGraph.updateEdges()
+    update()
+
+VAL_FIELDS = {
+  edge_threshold: "edge-threshold"
+  node_threshold: "node-threshold"
+  font_size: "font-size"
+  node_size: "node-size"
+  edge_size: "edge-size"
+}
+
 initGraph = (metrics, topics, container) ->
   topicGraph = new TopicGraph(metrics, topics, container)
+  for option, css_class of VAL_FIELDS
+    $("._#{css_class}").val(topicGraph.options[option])
+
+  value = if topicGraph.options.simple_weight then "simple" else "weighted"
+  $("input[value='#{value}']").prop("checked", true)
+  $("._colorful").prop("checked", topicGraph.options.colorful)
   topicGraph.updateEdges()
   topicGraph.updateNodes()
   update()
 
 update = () ->
   topicGraph.render()
-  $("._edge-threshold").val(topicGraph.options.edge_threshold)
-  $("._node-threshold").val(topicGraph.options.node_threshold)
-  $("._font-size").val(topicGraph.options.font_size)
-  $("._edge-score").val(topicGraph.options.edges_weighted)
-  $("._colorful").val(topicGraph.options.colorful)
   $("._topic-count").text(topicGraph.topic_count)
   $("._topic-connection-count").text(topicGraph.topic_connection_count)
   $("._edge-count").text(topicGraph.edges.length)

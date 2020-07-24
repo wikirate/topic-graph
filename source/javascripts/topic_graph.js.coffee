@@ -2,17 +2,20 @@ class window.TopicGraph
   constructor: (metricData, topicData, @container) ->
     @topic_ids = {}
     @topic_connections = {}
-    @nodes = []
-    @edges = []
-
+    @nodes = null
+    @edges = null
+    @data = {}
+    @network = null
     @topic_count = 0
     @topic_connection_count = 0
 
     @options = {
       font_size: 20
-      edges_weighted: false,
-      edge_threshold: 10 # Number of metrics tagged with a topic needed to establish a node
-      node_threshold: 15 # Number of connecting metrics between topics needed to establish an edge
+      node_size: 1
+      edge_size: 1
+      simple_weight: false
+      edge_threshold: 2 # Number of metrics tagged with a topic needed to establish a node
+      node_threshold: 2 # Number of connecting metrics between topics needed to establish an edge
       colorful: false
     }
 
@@ -71,7 +74,7 @@ class window.TopicGraph
       if item.topics.length > 1
         ids = item.topics.map (topic) -> self.topic_ids[topic]
           .sort()
-        topic_weight = 1/item.topics.length
+        topic_weight = 1/(item.topics.length - 1)
         for id1, i in ids
           for id2 in ids[i+1..]
             @topic_connections[id1] ?= {}
@@ -82,48 +85,71 @@ class window.TopicGraph
             @topic_connections[id1][id2].score += topic_weight
 
   showEdge: (topic_connection) ->
-    if @options.edges_weighted
-      topic_connection.score >= @options.edge_threshold
-    else
+    if @options.simple_weight
       topic_connection.count >= @options.edge_threshold
+    else
+      topic_connection.score >= @options.edge_threshold
 
   showNode: (topic) ->
     topic.metrics >= @options.node_threshold
 
   updateEdges: () ->
-    @edges = []
-    debugger
+    @edges = new vis.DataSet([])
     for id1, other_ids of @topic_connections
-      for id2, value of other_ids
+      for id2, connection of other_ids
         if @showEdge(@topic_connections[id1][id2])
-          @edges.push {
-            from: id1
-            to: id2
-            value: value
+          @edges.add {
+            from: parseInt(id1)
+            to: parseInt(id2)
+            value: connection.count * @options.edge_size
           }
 
   updateNodes: () ->
-    @nodes = []
+    @nodes = new vis.DataSet([])
     for topic in @topics
       if @showNode(topic)
-        group_id = if @options.colorful then topic.id else 1
-        @nodes.push {
+        group_id = switch
+          when @options.colorful then topic.id
+          when topic.name.indexOf("GRI") == 0 then 2
+          when topic.name.indexOf("SDG") == 0 then 3
+          when topic.name.indexOf("G4") == 0 then 4
+          else 1
+        @nodes.add {
           id: topic.id,
           label: topic.name,
-          value: topic.metrics
+          label_bak: topic.name
+          value: topic.metrics * @options.node_size
           group: group_id
         }
 
   render: () ->
-    data =
+    @data = {
       nodes: @nodes
       edges: @edges
+    }
+    data = @data
     options =
       nodes:
         shape: 'dot'
-        size: 32
         font:
-          size: @font_size
+          size: @options.font_size
+        scaling:
+          min: 10
+          max: 70
+          label:
+            enabled: false
+            min: 10
+            max: 50
+      edges:
+        scaling:
+          min: 1
+          max: 30
+          label:
+            enabled: true
+            min: 20
+            max: 50
+      interaction:
+        hover: true
       physics:
         forceAtlas2Based:
           gravitationalConstant: -26
@@ -134,4 +160,47 @@ class window.TopicGraph
         solver: 'forceAtlas2Based'
         timestep: 0.35
         stabilization: iterations: 150
-    new vis.Network(@container, data, options)
+    self = this
+    @network = new vis.Network(@container, data, options)
+    @network.on "click", (params) ->
+      if params.nodes.length < 1
+        self.nodes.update(
+          self.nodes.get(
+            fields: ["id", "label_bak"]
+          ).map((node) ->
+            id: node.id
+            label: node.label_bak
+          )
+        )
+        self.edges.update(
+          self.edges.getIds().map((id) ->
+            { id: id, hidden: false }
+          )
+        )
+        return
+
+      neighbours = params.nodes
+      self.edges.get(
+        filter: (item) ->
+          item.id in params.edges
+      ).forEach (edge) ->
+        neighbours.push edge.from
+        neighbours.push edge.to
+      debugger
+      self.nodes.update(
+        self.nodes.get(
+          fields: ["id", "label_bak"]
+        ).map((node) ->
+          id: node.id
+          label: if node.id in neighbours then node.label_bak else ""
+        )
+      )
+      self.edges.update(
+        self.edges.getIds().map((id) ->
+          { id: id, hidden: id not in params.edges }
+        )
+      )
+
+      console.log(
+        "click event, getNodeAt returns: " + this.getNodeAt(params.pointer.DOM)
+      )

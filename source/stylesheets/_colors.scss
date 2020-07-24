@@ -13,47 +13,7 @@ $other-blue: #4a588c;
 $medium-blue: #112053;
 $sky-blue: #5A6FB7;
 
-.food {
-  fill: #fdbf41;
-  color: #fdbf41;
-}
-
-.housing {
-  fill: $orange;
-  color: $orange;
-}
-
-.health-care {
-  fill: $fushia;
-  color: $fushia;
-}
-
-.education {
-  fill: #8774db;
-  color: #8774db;
-}
-
-.clothing {
-  fill: #4493d0;
-  color: #4493d0;
-}
-
-.transportation {
-  fill: #01b5a6;
-  color: #01b5a6;
-}
-
-.savings {
-  fill: #62ac5b;
-  color: #62ac5b;
-}
-
-$table-color: $medium-grey;
-
 $body-bg: $blue;
-//$body-color: $yellow;
-//$card-bg: $navy;
-//$card-header-bg: $navy;
 
 .red {
   color: $orange;
@@ -88,31 +48,6 @@ $body-bg: $blue;
 .blue-bg {
   background-color: $blue;
   color: $white;
-}
-
-.light-blue-bg {
-  background-color: $light-blue;
-  color: $table-color;
-}
-
-.medium-blue-bg {
-  background-color: $medium-blue;
-  color: $table-color;
-}
-
-.sky-blue-bg {
-  background-color: $sky-blue;
-  color: $table-color;
-}
-
-.lighter-blue-bg {
-  background-color: $lighter-blue;
-  color: $table-color;
-}
-
-.other-blue-bg {
-  background-color: $other-blue;
-  color: $table-color;
 }
 
 .white-bg {

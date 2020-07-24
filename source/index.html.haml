@@ -5,43 +5,60 @@
       .col-9
         #topicgraph
       .col-3
-        %h4 Raw data
-        %div
-          Topics:
-          %span._topic-count
-        %div
-          Connections:
-          %span._topic-connection-count
-        %h4.mt-2 Options
+        %table.table
+          %thead
+            %tr
+              %th{:scope => "col"}
+              %th{:scope => "col"} Total
+              %th{:scope => "col"} Filtered
+          %tbody
+            %tr
+              %th{:scope => "row"} Topics
+              %td._topic-count
+              %td._node-count
+            %tr
+              %th{:scope => "row"} Connections
+              %td._topic-connection-count
+              %td._edge-count
+
+        %h4.mt-2 Filter
         %form
           .form-group
-            .label.mr-1 Node threshold
-            %input.form-control._node-threshold.mr-3{type: "text", placeholder: "10"}
+            .label.mr-1 Minimum metrics tagged
+            %input.form-control._node-threshold.mr-3{type: "number"}
             %small.form-text.text-muted
               Number of metrics tagged with a topic needed to establish that topic as a node
           .form-group
-            .label.mr1 Edge threshold
-            %input.form-control._edge-threshold{type: "text"}
+            .label.mr-1 Minimum connection strength
+            %input.form-control._edge-threshold{type: "number"}
             %small.form-text.text-muted
               Number of connecting metrics between topics needed to establish an edge
-          .form-group.form-check
-            %input#exampleCheck1.form-check-input._edge-score{:type => "checkbox"}/
-            %label.form-check-label{:for => "exampleCheck1"}  Weighted connections
-            %small.form-text.text-muted
-              Each connection provided by a tagged metric contributes 1/#(metric's tags) to the threshold
-          .form-group
-            .label.mr-1 Label size
-            %input.form-control._font-size{type: "text"}
-          .form-group.form-check
-            %input.form-check-input._colorful{:type => "checkbox"}/
-            %label.form-check-label Colorful
-        %h4 Result
-        %div
-          Nodes:
-          %span._node-count
-        %div
-          Edges:
-          %span._edge-count
+          .form-group.mr-1
+            .label.mr-1 Connection Strength Formula
+            .form-check
+              %input#formulaRadios1.form-check-input._connection-formula{:checked => "checked", :name => "formulaRadios", :type => "radio", :value => "simple"}
+              %label.form-check-label{:for => "formulaRadios1"}
+                Simple:
+                %span.text-muted number of shared metrics
+            .form-check
+              %input#formulaRadios2.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => "weighted"}
+              %label.form-check-label{:for => "formulaRadios2"}
+                Weighted:
+                %span.text-muted metrics tagged with more topics weigh less
+        %h4.mt-2 Style
+        .form-group
+          .label.mr-1 Label size
+          %input.form-control._font-size{type: "number"}
+        .form-group
+          .label.mr-1 Node size
+          %input.form-control._node-size{type: "number"}
+        .form-group
+          .label.mr-1 Edge size
+          %input.form-control._edge-size{type: "number"}
+        .form-group.form-check
+          %input.form-check-input._colorful{:type => "checkbox"}/
+          %label.form-check-label Colorful
+
   = partial "partials/shared/footer"
 
 
