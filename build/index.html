@@ -36,56 +36,13 @@
 <h4 class='text-white'>
 translation missing: en.learn_more
 </h4>
-<ul class='list-unstyled'>
-<li>
-<a class='text-white' href='/living_wage.html'>
-translation missing: en.menu_living_wage
-</a>
-</li>
-<li>
-<a class='text-white' href='/gender.html'>
-translation missing: en.menu_gender
-</a>
-</li>
-<li>
-translation missing: en.menu_transparency
-</li>
-<li>
-<a class='text-white' href='/take_action.html'>
-translation missing: en.menu_take_action
-</a>
-</li>
-<!-- /%li -->
-<!-- /  %a.text-white{:href => "/resources.html"} -->
-<!-- /    = t('menu_resources') -->
-</ul>
+<ul class='list-unstyled'></ul>
 </div>
 <div class='col-sm-4 offset-md-1 py-4'>
 <h4 class='text-white'>
 translation missing: en.about
 </h4>
-<ul class='list-unstyled'>
-<li>
-<a class='text-white' href='/about_us.html'>
-translation missing: en.menu_about_fashion_checker
-</a>
-</li>
-<li>
-<a class='text-white' href='/our_demands.html'>
-translation missing: en.menu_our_demands
-</a>
-</li>
-<li>
-<a class='text-white' href='/who_are_we.html'>
-translation missing: en.menu_who_we_are
-</a>
-</li>
-<li>
-<a class='text-white' href='/methodology.html'>
-translation missing: en.menu_methodology
-</a>
-</li>
-</ul>
+<ul class='list-unstyled'></ul>
 </div>
 </div>
 </div>
@@ -111,12 +68,22 @@ Topic Graph
 <div id='topicgraph'></div>
 </div>
 <div class='col-3'>
+<h4>Raw data</h4>
+<div>
+Topics:
+<span class='_topic-count'></span>
+</div>
+<div>
+Connections:
+<span class='_topic-connection-count'></span>
+</div>
+<h4 class='mt-2'>Options</h4>
 <form>
 <div class='form-group'>
 <div class='label mr-1'>Node threshold</div>
 <input class='form-control _node-threshold mr-3' placeholder='10' type='text'>
 <small class='form-text text-muted'>
-Number of metrics tagged with a topic needed to establish a node
+Number of metrics tagged with a topic needed to establish that topic as a node
 </small>
 </div>
 <div class='form-group'>
@@ -126,15 +93,31 @@ Number of metrics tagged with a topic needed to establish a node
 Number of connecting metrics between topics needed to establish an edge
 </small>
 </div>
+<div class='form-group form-check'>
+<input class='form-check-input _edge-score' id='exampleCheck1' type='checkbox'>
+<label class='form-check-label' for='exampleCheck1'>Weighted connections</label>
+<small class='form-text text-muted'>
+Each connection provided by a tagged metric contributes 1/#(metric's tags) to the threshold
+</small>
+</div>
 <div class='form-group'>
-<div class='label mr-1'>Font size</div>
+<div class='label mr-1'>Label size</div>
 <input class='form-control _font-size' type='text'>
 </div>
 <div class='form-group form-check'>
-<input class='form-check-input' id='exampleCheck1' type='checkbox'>
-<label class='form-check-label' for='exampleCheck1'>Check me out</label>
+<input class='form-check-input _colorful' type='checkbox'>
+<label class='form-check-label'>Colorful</label>
 </div>
 </form>
+<h4>Result</h4>
+<div>
+Nodes:
+<span class='_node-count'></span>
+</div>
+<div>
+Edges:
+<span class='_edge-count'></span>
+</div>
 </div>
 </div>
 </main>
