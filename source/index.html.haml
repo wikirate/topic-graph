@@ -5,24 +5,43 @@
       .col-9
         #topicgraph
       .col-3
+        %h4 Raw data
+        %div
+          Topics:
+          %span._topic-count
+        %div
+          Connections:
+          %span._topic-connection-count
+        %h4.mt-2 Options
         %form
           .form-group
             .label.mr-1 Node threshold
             %input.form-control._node-threshold.mr-3{type: "text", placeholder: "10"}
             %small.form-text.text-muted
-              Number of metrics tagged with a topic needed to establish a node
+              Number of metrics tagged with a topic needed to establish that topic as a node
           .form-group
             .label.mr1 Edge threshold
             %input.form-control._edge-threshold{type: "text"}
             %small.form-text.text-muted
               Number of connecting metrics between topics needed to establish an edge
+          .form-group.form-check
+            %input#exampleCheck1.form-check-input._edge-score{:type => "checkbox"}/
+            %label.form-check-label{:for => "exampleCheck1"}  Weighted connections
+            %small.form-text.text-muted
+              Each connection provided by a tagged metric contributes 1/#(metric's tags) to the threshold
           .form-group
-            .label.mr-1 Font size
+            .label.mr-1 Label size
             %input.form-control._font-size{type: "text"}
           .form-group.form-check
-            %input#exampleCheck1.form-check-input{:type => "checkbox"}/
-            %label.form-check-label{:for => "exampleCheck1"} Check me out
-
+            %input.form-check-input._colorful{:type => "checkbox"}/
+            %label.form-check-label Colorful
+        %h4 Result
+        %div
+          Nodes:
+          %span._node-count
+        %div
+          Edges:
+          %span._edge-count
   = partial "partials/shared/footer"
 
 

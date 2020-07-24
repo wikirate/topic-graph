@@ -5,9 +5,6 @@ API_HOST = "data"
 METRIC_URL = "#{API_HOST}/Metric.json"
 TOPIC_URL = "#{API_HOST}/topic.json"
 
-NODE_THRESHOLD = 15 # Number of metrics tagged with a topic needed to establish a node
-EDGE_THRESHOLD = 10 # Number of connecting metrics between topics needed to establish an edge
-
 topicGraph = null
 
 $(document).ready ->
@@ -16,25 +13,47 @@ $(document).ready ->
   # loadGraph("topicgraph")
 
   $("body").on "change", "._edge-threshold", ->
-    topicGraph.setEdges($(this).val())
-    topicGraph.render()
+    topicGraph.options.edge_threshold = $(this).val()
+    topicGraph.updateEdges()
+    update()
 
   $("body").on "change", "._node-threshold", ->
-    topicGraph.setNodes($(this).val())
-    topicGraph.render()
+    topicGraph.options.node_threshold = $(this).val()
+    topicGraph.updateNodes()
+    update()
 
   $("body").on "change", "._font-size", ->
-    topicGraph.font_size = $(this).val()
-    topicGraph.render()
+    topicGraph.options.font_size = $(this).val()
+    update()
+
+  $("body").on "change", "._edge-score", ->
+    topicGraph.options.edges_weighted = this.checked
+    topicGraph.updateEdges()
+    update()
+
+  $("body").on "change", "._colorful", ->
+    topicGraph.options.colorful = this.checked
+    debugger
+    topicGraph.updateNodes()
+    update()
 
 initGraph = (metrics, topics, container) ->
   topicGraph = new TopicGraph(metrics, topics, container)
-  topicGraph.setEdges(EDGE_THRESHOLD)
-  topicGraph.setNodes(NODE_THRESHOLD)
-  $("._edge-threshold").val(EDGE_THRESHOLD)
-  $("._node-threshold").val(NODE_THRESHOLD)
-  $("._font-size").val(topicGraph.font_size)
+  topicGraph.updateEdges()
+  topicGraph.updateNodes()
+  update()
+
+update = () ->
   topicGraph.render()
+  $("._edge-threshold").val(topicGraph.options.edge_threshold)
+  $("._node-threshold").val(topicGraph.options.node_threshold)
+  $("._font-size").val(topicGraph.options.font_size)
+  $("._edge-score").val(topicGraph.options.edges_weighted)
+  $("._colorful").val(topicGraph.options.colorful)
+  $("._topic-count").text(topicGraph.topic_count)
+  $("._topic-connection-count").text(topicGraph.topic_connection_count)
+  $("._edge-count").text(topicGraph.edges.length)
+  $("._node-count").text(topicGraph.nodes.length)
 
 loadGraph = (containerId) ->
   $.ajax(

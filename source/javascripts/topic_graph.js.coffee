@@ -1,12 +1,20 @@
-LINK_TARGET_HOST = "https://wikirate.org"
-
 class window.TopicGraph
   constructor: (metricData, topicData, @container) ->
     @topic_ids = {}
     @topic_connections = {}
     @nodes = []
     @edges = []
-    @font_size = 20
+
+    @topic_count = 0
+    @topic_connection_count = 0
+
+    @options = {
+      font_size: 20
+      edges_weighted: false,
+      edge_threshold: 10 # Number of metrics tagged with a topic needed to establish a node
+      node_threshold: 15 # Number of connecting metrics between topics needed to establish an edge
+      colorful: false
+    }
 
     @example_topic = {
       "id": 45466,
@@ -54,40 +62,56 @@ class window.TopicGraph
     }
 
     @topics = topicData.items
-
+    @topic_count = @topics.length
     for item in @topics
       @topic_ids[item.name] = item.id
 
     self = this
     for item in metricData.items
-        if item.topics.length > 1
-          ids = item.topics.map (topic) -> self.topic_ids[topic]
-            .sort()
-          for id1, i in ids
-            for id2 in ids[i+1..]
-              @topic_connections[id1] ?= {}
-              @topic_connections[id1][id2] ?= 0
-              @topic_connections[id1][id2] += 1
+      if item.topics.length > 1
+        ids = item.topics.map (topic) -> self.topic_ids[topic]
+          .sort()
+        topic_weight = 1/item.topics.length
+        for id1, i in ids
+          for id2 in ids[i+1..]
+            @topic_connections[id1] ?= {}
+            @topic_connections[id1][id2] ?= { count: 0, score: 0}
+            if @topic_connections[id1][id2].count == 0
+              @topic_connection_count += 1
+            @topic_connections[id1][id2].count += 1
+            @topic_connections[id1][id2].score += topic_weight
 
-  setEdges: (edge_threshold = EDGE_THRESHOLD) ->
+  showEdge: (topic_connection) ->
+    if @options.edges_weighted
+      topic_connection.score >= @options.edge_threshold
+    else
+      topic_connection.count >= @options.edge_threshold
+
+  showNode: (topic) ->
+    topic.metrics >= @options.node_threshold
+
+  updateEdges: () ->
     @edges = []
+    debugger
     for id1, other_ids of @topic_connections
       for id2, value of other_ids
-        if @topic_connections[id1][id2] > edge_threshold
+        if @showEdge(@topic_connections[id1][id2])
           @edges.push {
             from: id1
             to: id2
             value: value
           }
 
-  setNodes: (node_threshold = NODE_THRESHOLD) ->
+  updateNodes: () ->
     @nodes = []
     for topic in @topics
-      if topic.metrics >= node_threshold
+      if @showNode(topic)
+        group_id = if @options.colorful then topic.id else 1
         @nodes.push {
           id: topic.id,
           label: topic.name,
           value: topic.metrics
+          group: group_id
         }
 
   render: () ->
