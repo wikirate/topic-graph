@@ -3,6 +3,7 @@ class window.TopicGraph
     @topic_ids = {}
     @topic_connections = {}
     @nodes = null
+    @selected_node = null
     @edges = null
     @data = {}
     @network = null
@@ -122,6 +123,9 @@ class window.TopicGraph
           group: group_id
         }
 
+  loadConfig: (config) ->
+      @options = config
+
   render: () ->
     @data = {
       nodes: @nodes
@@ -163,7 +167,9 @@ class window.TopicGraph
     self = this
     @network = new vis.Network(@container, data, options)
     @network.on "click", (params) ->
-      if params.nodes.length < 1
+      debugger
+      if params.nodes.length < 1 or @selected_node == params.nodes[0]
+        @selected_node = null
         self.nodes.update(
           self.nodes.get(
             fields: ["id", "label_bak"]
@@ -179,6 +185,7 @@ class window.TopicGraph
         )
         return
 
+      @selected_node = params.nodes[0]
       neighbours = params.nodes
       self.edges.get(
         filter: (item) ->

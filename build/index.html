@@ -16,9 +16,11 @@
       }
     </style>
 
+    <link href="stylesheets/select2.min.css" rel="stylesheet" />
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/select2.full.min.js"></script>
     <script src="javascripts/topic_graph.js"></script>
     <script src="javascripts/site.js"></script>
 
@@ -88,6 +90,20 @@ Topic Network Map
 </table>
 <h4 class='mt-2'>Filter</h4>
 <form>
+<div class='form-group'>
+<div class='label'>Configs</div>
+<select class='w-100' id='configs'>
+<option value='default'>
+Default
+</option>
+<option value='solar'>
+Solar system
+</option>
+<option value='chaos'>
+Chaos
+</option>
+</select>
+</div>
 <div class='form-group'>
 <div class='label mr-1'>Minimum metrics tagged</div>
 <input class='form-control _node-threshold mr-3' type='number'>

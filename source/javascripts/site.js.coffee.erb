@@ -1,4 +1,4 @@
-# $.fn.select2.defaults.set("theme", "bootstrap4")
+$.fn.select2.defaults.set("theme", "bootstrap4")
 
 #API_HOST = "https://wikirate.org"
 API_HOST = "data"
@@ -7,7 +7,35 @@ TOPIC_URL = "#{API_HOST}/topic.json"
 
 topicGraph = null
 
+configs = {
+  default:
+    font_size: 20
+    node_size: 1
+    edge_size: 1
+    simple_weight: false
+    edge_threshold: 2
+    node_threshold: 2
+    colorful: false
+  solar:
+    font_size: 20
+    node_size: 1
+    edge_size: 1
+    simple_weight: false
+    edge_threshold: 2
+    node_threshold: 130
+    colorful: false
+  chaos:
+    font_size: 20
+    node_size: 1
+    edge_size: 1
+    simple_weight: true
+    edge_threshold: 1
+    node_threshold: 1
+    colorful: true
+}
+
 $(document).ready ->
+  $("#configs").select2()
   container = document.getElementById("topicgraph")
   initGraph(metrics, topics, container)
   # loadGraph("topicgraph")
@@ -33,6 +61,13 @@ $(document).ready ->
 
   $("body").on "change", "._node-size", ->
     topicGraph.options.node_size = parseFloat($(this).val())
+    topicGraph.updateNodes()
+    update()
+
+  $("body").on "change", "#configs", ->
+    selected = $(this).select2("data")
+    topicGraph.loadConfig(configs[selected[0].id])
+    topicGraph.updateEdges()
     topicGraph.updateNodes()
     update()
 
@@ -71,6 +106,8 @@ initGraph = (metrics, topics, container) ->
 
 update = () ->
   topicGraph.render()
+  for option, value of topicGraph.options
+    $("._#{VAL_FIELDS[option]}").val(value)
   $("._topic-count").text(topicGraph.topic_count)
   $("._topic-connection-count").text(topicGraph.topic_connection_count)
   $("._edge-count").text(topicGraph.edges.length)
