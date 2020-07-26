@@ -123,12 +123,13 @@ class window.TopicGraph
         for id1, i in ids
           for id2 in ids[i+1..]
             @topic_connections[id1] ?= {}
-            @topic_connections[id1][id2] ?= { count: 0, topic_count_score: 0, bookmark_score: 0 }
+            @topic_connections[id1][id2] ?= { count: 0, topic_count_score: 0, bookmark_score: 0, title: "Connecting Metrics:" }
             if @topic_connections[id1][id2].count == 0
               @topic_connection_count += 1
             @topic_connections[id1][id2].count += 1
             @topic_connections[id1][id2].topic_count_score += topic_count_score
             @topic_connections[id1][id2].bookmark_score += bookmark_score
+            @topic_connections[id1][id2].title += "<br><a href='http://wikirate.org/#{item.name}'>#{item.name}</a>"
 
   showEdge: (topic_connection) ->
     if @options.edge_formula == EdgeFormula.simple
@@ -160,6 +161,7 @@ class window.TopicGraph
             from: parseInt(id1)
             to: parseInt(id2)
             value: connection.count * @options.edge_size
+            title: connection.title
           }
 
   updateNodes: () ->
