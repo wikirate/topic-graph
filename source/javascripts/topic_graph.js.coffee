@@ -23,7 +23,7 @@ class window.TopicGraph
       font_size: 20
       node_size: 1
       edge_size: 1
-      edge_formula: EdgeFormula.simple
+      edge_formula: EdgeFormula.topic_count
       node_formula: NodeFormula.metrics
       edge_threshold: 2 # Number of metrics tagged with a topic needed to establish a node
       node_threshold: 2 # Number of connecting metrics between topics needed to establish an edge
@@ -201,6 +201,13 @@ class window.TopicGraph
 
     @network = new vis.Network(@container, @data, @vis_config)
     self = this
+    @network.on "hoverNode", (params) ->
+      node = self.nodes.get(params.node)
+      node.label = node.label_bak
+      self.nodes.update(
+        node
+      )
+
     @network.on "click", (params) ->
       if params.nodes.length < 1 or @selected_node == params.nodes[0]
         @selected_node = null
