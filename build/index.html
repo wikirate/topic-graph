@@ -6,23 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title>Topic Graph</title>
-
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
-    <style type="text/css">
-      #topicgraph {
-        width: 900px;
-        height: 900px;
-        border: 1px solid lightgray;
-      }
-    </style>
 
     <link href="stylesheets/select2.min.css" rel="stylesheet" />
     <link href="stylesheets/site.css" rel="stylesheet" />
     <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
     <script src="javascripts/select2.full.min.js"></script>
+    <script src="javascripts/ace/src-min/ace.js"></script>
+    <script src="javascripts/js-yaml.min.js"></script>
     <script src="javascripts/topic_graph.js"></script>
     <script src="javascripts/site.js"></script>
+
 
   </head>
   <body>
@@ -88,10 +83,8 @@ Topic Network Map
 </tr>
 </tbody>
 </table>
-<h4 class='mt-2'>Filter</h4>
-<form>
+<h5 class='mt-3'>Select a configuration</h5>
 <div class='form-group'>
-<div class='label'>Configs</div>
 <select class='w-100' id='configs'>
 <option value='default'>
 Default
@@ -104,6 +97,20 @@ Chaos
 </option>
 </select>
 </div>
+<h5 class='mt-3'>Change configuration</h5>
+<ul class='nav nav-tabs' id='myTab' role='tablist'>
+<li class='nav-item' role='presentation'>
+<a aria-controls='filter' aria-selected='true' class='nav-link active' data-toggle='tab' href='#filter' id='filter-tab' role='tab'>filter</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a aria-controls='style' aria-selected='false' class='nav-link' data-toggle='tab' href='#style' id='style-tab' role='tab'>style</a>
+</li>
+<li class='nav-item' role='presentation'>
+<a aria-controls='advanced' aria-selected='false' class='nav-link' data-toggle='tab' href='#advanced' id='advanced-tab' role='tab'>advanced</a>
+</li>
+</ul>
+<div class='tab-content pt-3' id='myTabContent'>
+<div aria-labelledby='filter-tab' class='tab-pane fade show active' id='filter' role='tabpanel'>
 <div class='form-group'>
 <div class='label mr-1'>Minimum metrics tagged</div>
 <input class='form-control _node-threshold mr-3' type='number'>
@@ -135,8 +142,8 @@ Weighted:
 </label>
 </div>
 </div>
-</form>
-<h4 class='mt-2'>Style</h4>
+</div>
+<div aria-labelledby='style-tab' class='tab-pane fade' id='style' role='tabpanel'>
 <div class='form-group'>
 <div class='label mr-1'>Label size</div>
 <input class='form-control _font-size' type='number'>
@@ -152,6 +159,16 @@ Weighted:
 <div class='form-group form-check'>
 <input class='form-check-input _colorful' type='checkbox'>
 <label class='form-check-label'>Colorful</label>
+</div>
+</div>
+<div aria-labelledby='advanced-tab' class='tab-pane fade' id='advanced' role='tabpanel'>
+<div class='editor'>
+<div id='editor'></div>
+<div class='btn btn-primary _apply-config mt-2'>
+Apply
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>

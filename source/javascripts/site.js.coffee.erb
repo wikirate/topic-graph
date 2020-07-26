@@ -6,6 +6,7 @@ METRIC_URL = "#{API_HOST}/Metric.json"
 TOPIC_URL = "#{API_HOST}/topic.json"
 
 topicGraph = null
+editor = null
 
 configs = {
   default:
@@ -34,10 +35,19 @@ configs = {
     colorful: true
 }
 
+initAce = () ->
+  editor = ace.edit("editor");
+  editor.setTheme("ace/theme/github");
+  editor.setOption('showLineNumbers', false);
+  editor.session.setMode("ace/mode/yaml");
+  editor.resize()
+
 $(document).ready ->
   $("#configs").select2()
+  initAce()
   container = document.getElementById("topicgraph")
   initGraph(metrics, topics, container)
+  editor.setValue(topicGraph.getVisConfig())
   # loadGraph("topicgraph")
 
   $("body").on "change", "._edge-threshold", ->
@@ -75,6 +85,10 @@ $(document).ready ->
     topicGraph.options.colorful = this.checked
     topicGraph.updateNodes()
     update()
+
+  $("body").on "click", "._apply-config", ->
+    topicGraph.setVisConfig(editor.getValue())
+    topicGraph.render()
 
   $("body").on "change", "._connection-formula", ->
     if $('input[name=formulaRadios]:checked').val() == "simple"

@@ -20,6 +20,39 @@ class window.TopicGraph
       colorful: false
     }
 
+    @vis_config =
+      nodes:
+        shape: 'dot'
+        font:
+          size: @options.font_size
+        scaling:
+          min: 10
+          max: 70
+          label:
+            enabled: false
+            min: 10
+            max: 50
+      edges:
+        scaling:
+          min: 1
+          max: 30
+          label:
+            enabled: true
+            min: 20
+            max: 50
+      interaction:
+        hover: true
+      physics:
+        forceAtlas2Based:
+          gravitationalConstant: -26
+          centralGravity: 0.005
+          springLength: 230
+          springConstant: 0.18
+        maxVelocity: 146
+        solver: 'forceAtlas2Based'
+        timestep: 0.35
+        stabilization: iterations: 150
+
     @example_topic = {
       "id": 45466,
       "name": "Accident",
@@ -94,6 +127,12 @@ class window.TopicGraph
   showNode: (topic) ->
     topic.metrics >= @options.node_threshold
 
+  setFontSize: (size) ->
+    @options.font_size = size
+    @vis_config.nodes ?= {}
+    @vis_config.nodes.font ?= {}
+    @vis_config.nodes.font.size = size
+
   updateEdges: () ->
     @edges = new vis.DataSet([])
     for id1, other_ids of @topic_connections
@@ -123,51 +162,27 @@ class window.TopicGraph
           group: group_id
         }
 
-  loadConfig: (config) ->
-      @options = config
+  loadConfig: (options) ->
+      @options = options
+      @setFontSize(options.font_size)
+
+  getVisConfig: () ->
+    jsyaml.safeDump(@vis_config)
+
+  setVisConfig: (yaml) ->
+    debugger
+    @vis_config = jsyaml.safeLoad(yaml)
+    @network.setOptions(@vis_config)
 
   render: () ->
     @data = {
       nodes: @nodes
       edges: @edges
     }
-    data = @data
-    options =
-      nodes:
-        shape: 'dot'
-        font:
-          size: @options.font_size
-        scaling:
-          min: 10
-          max: 70
-          label:
-            enabled: false
-            min: 10
-            max: 50
-      edges:
-        scaling:
-          min: 1
-          max: 30
-          label:
-            enabled: true
-            min: 20
-            max: 50
-      interaction:
-        hover: true
-      physics:
-        forceAtlas2Based:
-          gravitationalConstant: -26
-          centralGravity: 0.005
-          springLength: 230
-          springConstant: 0.18
-        maxVelocity: 146
-        solver: 'forceAtlas2Based'
-        timestep: 0.35
-        stabilization: iterations: 150
+
+    @network = new vis.Network(@container, @data, @vis_config)
     self = this
-    @network = new vis.Network(@container, data, options)
     @network.on "click", (params) ->
-      debugger
       if params.nodes.length < 1 or @selected_node == params.nodes[0]
         @selected_node = null
         self.nodes.update(
@@ -193,7 +208,7 @@ class window.TopicGraph
       ).forEach (edge) ->
         neighbours.push edge.from
         neighbours.push edge.to
-      debugger
+
       self.nodes.update(
         self.nodes.get(
           fields: ["id", "label_bak"]
@@ -206,8 +221,4 @@ class window.TopicGraph
         self.edges.getIds().map((id) ->
           { id: id, hidden: id not in params.edges }
         )
-      )
-
-      console.log(
-        "click event, getNodeAt returns: " + this.getNodeAt(params.pointer.DOM)
       )

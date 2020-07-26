@@ -21,52 +21,66 @@
               %td._topic-connection-count
               %td._edge-count
 
-        %h4.mt-2 Filter
-        %form
-          .form-group
-            .label Configs
-            %select#configs.w-100
-              %option{value: "default"}
-                Default
-              %option{value: "solar"}
-                Solar system
-              %option{value: "chaos"}
-                Chaos
-          .form-group
-            .label.mr-1 Minimum metrics tagged
-            %input.form-control._node-threshold.mr-3{type: "number"}
-            %small.form-text.text-muted
-              Number of metrics tagged with a topic needed to establish that topic as a node
-          .form-group
-            .label.mr-1 Minimum connection strength
-            %input.form-control._edge-threshold{type: "number"}
-            %small.form-text.text-muted
-              Number of connecting metrics between topics needed to establish an edge
-          .form-group.mr-1
-            .label.mr-1 Connection Strength Formula
-            .form-check
-              %input#formulaRadios1.form-check-input._connection-formula{:checked => "checked", :name => "formulaRadios", :type => "radio", :value => "simple"}
-              %label.form-check-label{:for => "formulaRadios1"}
-                Simple:
-                %span.text-muted number of shared metrics
-            .form-check
-              %input#formulaRadios2.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => "weighted"}
-              %label.form-check-label{:for => "formulaRadios2"}
-                Weighted:
-                %span.text-muted metrics tagged with more topics weigh less
-        %h4.mt-2 Style
+        %h5.mt-3 Select a configuration
         .form-group
-          .label.mr-1 Label size
-          %input.form-control._font-size{type: "number"}
-        .form-group
-          .label.mr-1 Node size
-          %input.form-control._node-size{type: "number"}
-        .form-group
-          .label.mr-1 Edge size
-          %input.form-control._edge-size{type: "number"}
-        .form-group.form-check
-          %input.form-check-input._colorful{:type => "checkbox"}/
-          %label.form-check-label Colorful
+          %select#configs.w-100
+            %option{value: "default"}
+              Default
+            %option{value: "solar"}
+              Solar system
+            %option{value: "chaos"}
+              Chaos
+        %h5.mt-3 Change configuration
+        %ul#myTab.nav.nav-tabs{:role => "tablist"}
+          %li.nav-item{:role => "presentation"}
+            %a#filter-tab.nav-link.active{"aria-controls" => "filter", "aria-selected" => "true", "data-toggle" => "tab", :href => "#filter", :role => "tab"} filter
+          %li.nav-item{:role => "presentation"}
+            %a#style-tab.nav-link{"aria-controls" => "style", "aria-selected" => "false", "data-toggle" => "tab", :href => "#style", :role => "tab"} style
+          %li.nav-item{:role => "presentation"}
+            %a#advanced-tab.nav-link{"aria-controls" => "advanced", "aria-selected" => "false", "data-toggle" => "tab", :href => "#advanced", :role => "tab"} advanced
+        
+        #myTabContent.tab-content.pt-3
+          #filter.tab-pane.fade.show.active{"aria-labelledby" => "filter-tab", :role => "tabpanel"}
+            .form-group
+              .label.mr-1 Minimum metrics tagged
+              %input.form-control._node-threshold.mr-3{type: "number"}
+              %small.form-text.text-muted
+                Number of metrics tagged with a topic needed to establish that topic as a node
+            .form-group
+              .label.mr-1 Minimum connection strength
+              %input.form-control._edge-threshold{type: "number"}
+              %small.form-text.text-muted
+                Number of connecting metrics between topics needed to establish an edge
+            .form-group.mr-1
+              .label.mr-1 Connection Strength Formula
+              .form-check
+                %input#formulaRadios1.form-check-input._connection-formula{:checked => "checked", :name => "formulaRadios", :type => "radio", :value => "simple"}
+                %label.form-check-label{:for => "formulaRadios1"}
+                  Simple:
+                  %span.text-muted number of shared metrics
+              .form-check
+                %input#formulaRadios2.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => "weighted"}
+                %label.form-check-label{:for => "formulaRadios2"}
+                  Weighted:
+                  %span.text-muted metrics tagged with more topics weigh less
+          #style.tab-pane.fade{"aria-labelledby" => "style-tab", :role => "tabpanel"}
+            .form-group
+              .label.mr-1 Label size
+              %input.form-control._font-size{type: "number"}
+            .form-group
+              .label.mr-1 Node size
+              %input.form-control._node-size{type: "number"}
+            .form-group
+              .label.mr-1 Edge size
+              %input.form-control._edge-size{type: "number"}
+            .form-group.form-check
+              %input.form-check-input._colorful{:type => "checkbox"}/
+              %label.form-check-label Colorful
+          #advanced.tab-pane.fade{"aria-labelledby" => "advanced-tab", :role => "tabpanel"}
+            .editor
+              #editor
+              .btn.btn-primary._apply-config.mt-2
+                Apply
 
   = partial "partials/shared/footer"
 
