@@ -89,6 +89,9 @@ Topic Network Map
 <option value='default'>
 Default
 </option>
+<option value='elite_connections'>
+Elite Connections
+</option>
 <option value='solar'>
 Solar system
 </option>
@@ -112,11 +115,28 @@ Chaos
 <div class='tab-content pt-3' id='myTabContent'>
 <div aria-labelledby='filter-tab' class='tab-pane fade show active' id='filter' role='tabpanel'>
 <div class='form-group'>
-<div class='label mr-1'>Minimum metrics tagged</div>
+<div class='label mr-1'>Minimum topic importance</div>
 <input class='form-control _node-threshold mr-3' type='number'>
 <small class='form-text text-muted'>
 Number of metrics tagged with a topic needed to establish that topic as a node
 </small>
+</div>
+<div class='form-group mr-1'>
+<div class='label mr-1'>Topic importance Formula</div>
+<div class='form-check'>
+<input checked='checked' class='form-check-input _node-formula' id='formulaRadios1' name='nodeFormulaRadios' type='radio' value='1'>
+<label class='form-check-label' for='formulaRadios1'>
+Metrics:
+<span class='text-muted'>more metrics tagged, more important</span>
+</label>
+</div>
+<div class='form-check'>
+<input class='form-check-input _node-formula' id='formulaRadios2' name='nodeFormulaRadios' type='radio' value='2'>
+<label class='form-check-label' for='formulaRadios2'>
+Bookmarks:
+<span class='text-muted'>more bookmarked, more important</span>
+</label>
+</div>
 </div>
 <div class='form-group'>
 <div class='label mr-1'>Minimum connection strength</div>
@@ -128,17 +148,24 @@ Number of connecting metrics between topics needed to establish an edge
 <div class='form-group mr-1'>
 <div class='label mr-1'>Connection Strength Formula</div>
 <div class='form-check'>
-<input checked='checked' class='form-check-input _connection-formula' id='formulaRadios1' name='formulaRadios' type='radio' value='simple'>
+<input checked='checked' class='form-check-input _connection-formula' id='formulaRadios1' name='formulaRadios' type='radio' value='1'>
 <label class='form-check-label' for='formulaRadios1'>
 Simple:
 <span class='text-muted'>number of shared metrics</span>
 </label>
 </div>
 <div class='form-check'>
-<input class='form-check-input _connection-formula' id='formulaRadios2' name='formulaRadios' type='radio' value='weighted'>
+<input class='form-check-input _connection-formula' id='formulaRadios2' name='formulaRadios' type='radio' value='2'>
 <label class='form-check-label' for='formulaRadios2'>
 Weighted:
 <span class='text-muted'>metrics tagged with more topics weigh less</span>
+</label>
+</div>
+<div class='form-check'>
+<input class='form-check-input _connection-formula' id='formulaRadios2' name='formulaRadios' type='radio' value='3'>
+<label class='form-check-label' for='formulaRadios2'>
+Bookmarked:
+<span class='text-muted'>metrics more bookmarked weigh more</span>
 </label>
 </div>
 </div>

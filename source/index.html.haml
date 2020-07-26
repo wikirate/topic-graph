@@ -26,10 +26,13 @@
           %select#configs.w-100
             %option{value: "default"}
               Default
+            %option{value: "elite_connections"}
+              Elite Connections
             %option{value: "solar"}
               Solar system
             %option{value: "chaos"}
               Chaos
+
         %h5.mt-3 Change configuration
         %ul#myTab.nav.nav-tabs{:role => "tablist"}
           %li.nav-item{:role => "presentation"}
@@ -42,10 +45,22 @@
         #myTabContent.tab-content.pt-3
           #filter.tab-pane.fade.show.active{"aria-labelledby" => "filter-tab", :role => "tabpanel"}
             .form-group
-              .label.mr-1 Minimum metrics tagged
+              .label.mr-1 Minimum topic importance
               %input.form-control._node-threshold.mr-3{type: "number"}
               %small.form-text.text-muted
                 Number of metrics tagged with a topic needed to establish that topic as a node
+            .form-group.mr-1
+              .label.mr-1 Topic importance Formula
+              .form-check
+                %input#formulaRadios1.form-check-input._node-formula{:checked => "checked", :name => "nodeFormulaRadios", :type => "radio", :value => 1}
+                %label.form-check-label{:for => "formulaRadios1"}
+                  Metrics:
+                  %span.text-muted more metrics tagged, more important
+              .form-check
+                %input#formulaRadios2.form-check-input._node-formula{:name => "nodeFormulaRadios", :type => "radio", :value => 2}
+                %label.form-check-label{:for => "formulaRadios2"}
+                  Bookmarks:
+                  %span.text-muted more bookmarked, more important
             .form-group
               .label.mr-1 Minimum connection strength
               %input.form-control._edge-threshold{type: "number"}
@@ -54,15 +69,20 @@
             .form-group.mr-1
               .label.mr-1 Connection Strength Formula
               .form-check
-                %input#formulaRadios1.form-check-input._connection-formula{:checked => "checked", :name => "formulaRadios", :type => "radio", :value => "simple"}
+                %input#formulaRadios1.form-check-input._connection-formula{:checked => "checked", :name => "formulaRadios", :type => "radio", :value => 1}
                 %label.form-check-label{:for => "formulaRadios1"}
                   Simple:
                   %span.text-muted number of shared metrics
               .form-check
-                %input#formulaRadios2.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => "weighted"}
+                %input#formulaRadios2.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => 2}
                 %label.form-check-label{:for => "formulaRadios2"}
                   Weighted:
                   %span.text-muted metrics tagged with more topics weigh less
+              .form-check
+                %input#formulaRadios2.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => 3}
+                %label.form-check-label{:for => "formulaRadios2"}
+                  Bookmarked:
+                  %span.text-muted metrics more bookmarked weigh more
           #style.tab-pane.fade{"aria-labelledby" => "style-tab", :role => "tabpanel"}
             .form-group
               .label.mr-1 Label size

@@ -1,3 +1,12 @@
+EdgeFormula =
+  simple: 1
+  topic_count : 2
+  bookmarks: 3
+
+NodeFormula =
+  metrics: 1
+  bookmarks: 2
+
 class window.TopicGraph
   constructor: (metricData, topicData, @container) ->
     @topic_ids = {}
@@ -14,7 +23,8 @@ class window.TopicGraph
       font_size: 20
       node_size: 1
       edge_size: 1
-      simple_weight: false
+      edge_formula: EdgeFormula.simple
+      node_formula: NodeFormula.metrics
       edge_threshold: 2 # Number of metrics tagged with a topic needed to establish a node
       node_threshold: 2 # Number of connecting metrics between topics needed to establish an edge
       colorful: false
@@ -35,7 +45,7 @@ class window.TopicGraph
       edges:
         scaling:
           min: 1
-          max: 30
+          max: 20
           label:
             enabled: true
             min: 20
@@ -108,24 +118,32 @@ class window.TopicGraph
       if item.topics.length > 1
         ids = item.topics.map (topic) -> self.topic_ids[topic]
           .sort()
-        topic_weight = 1/(item.topics.length - 1)
+        topic_count_score = 1/(item.topics.length - 1)
+        bookmark_score = item.bookmarkers
         for id1, i in ids
           for id2 in ids[i+1..]
             @topic_connections[id1] ?= {}
-            @topic_connections[id1][id2] ?= { count: 0, score: 0}
+            @topic_connections[id1][id2] ?= { count: 0, topic_count_score: 0, bookmark_score: 0 }
             if @topic_connections[id1][id2].count == 0
               @topic_connection_count += 1
             @topic_connections[id1][id2].count += 1
-            @topic_connections[id1][id2].score += topic_weight
+            @topic_connections[id1][id2].topic_count_score += topic_count_score
+            @topic_connections[id1][id2].bookmark_score += bookmark_score
 
   showEdge: (topic_connection) ->
-    if @options.simple_weight
+    if @options.edge_formula == EdgeFormula.simple
       topic_connection.count >= @options.edge_threshold
+    else if @options.edge_formula == EdgeFormula.topic_count
+      topic_connection.topic_count_score >= @options.edge_threshold
     else
-      topic_connection.score >= @options.edge_threshold
+      debugger
+      topic_connection.bookmark_score >= @options.edge_threshold
 
   showNode: (topic) ->
-    topic.metrics >= @options.node_threshold
+    if @options.node_formula == NodeFormula.bookmarks
+      topic.bookmarkers >= @options.node_threshold
+    else
+      topic.metrics >= @options.node_threshold
 
   setFontSize: (size) ->
     @options.font_size = size
@@ -154,11 +172,12 @@ class window.TopicGraph
           when topic.name.indexOf("SDG") == 0 then 3
           when topic.name.indexOf("G4") == 0 then 4
           else 1
+        value = if @options.node_formula_bookmark then topic.bookmarkers else topic.metrics
         @nodes.add {
           id: topic.id,
           label: topic.name,
           label_bak: topic.name
-          value: topic.metrics * @options.node_size
+          value: value * @options.node_size
           group: group_id
         }
 

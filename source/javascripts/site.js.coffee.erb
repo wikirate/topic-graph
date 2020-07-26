@@ -8,12 +8,22 @@ TOPIC_URL = "#{API_HOST}/topic.json"
 topicGraph = null
 editor = null
 
+EdgeFormula =
+  simple: 1
+  topic_count : 2
+  bookmarks: 3
+
+NodeFormula =
+  metrics: 1
+  bookmarks: 2
+
 configs = {
   default:
     font_size: 20
     node_size: 1
     edge_size: 1
-    simple_weight: false
+    edge_formula: EdgeFormula.topic_count
+    node_formula: NodeFormula.metrics
     edge_threshold: 2
     node_threshold: 2
     colorful: false
@@ -21,7 +31,8 @@ configs = {
     font_size: 20
     node_size: 1
     edge_size: 1
-    simple_weight: false
+    edge_formula: EdgeFormula.topic_count
+    node_formula: NodeFormula.metrics
     edge_threshold: 2
     node_threshold: 130
     colorful: false
@@ -29,10 +40,20 @@ configs = {
     font_size: 20
     node_size: 1
     edge_size: 1
-    simple_weight: true
+    edge_formula: EdgeFormula.simple
+    node_formula: NodeFormula.metrics
     edge_threshold: 1
     node_threshold: 1
     colorful: true
+  elite_connections:
+    font_size: 20
+    node_size: 1
+    edge_size: 1
+    edge_formula: EdgeFormula.topic_count
+    node_formula: NodeFormula.metrics
+    edge_threshold: 1.5
+    node_threshold: 10
+    colorful: false
 }
 
 initAce = () ->
@@ -91,11 +112,14 @@ $(document).ready ->
     topicGraph.render()
 
   $("body").on "change", "._connection-formula", ->
-    if $('input[name=formulaRadios]:checked').val() == "simple"
-      topicGraph.options.simple_weight = true
-    else
-      topicGraph.options.simple_weight = false
+    topicGraph.options.edge_formula = parseInt($('input._connection-formula:checked').val())
     topicGraph.updateEdges()
+    update()
+
+  $("body").on "change", "._node-formula", ->
+    topicGraph.options.node_formula = parseInt($('input._node-formula:checked').val())
+    debugger
+    topicGraph.updateNodes()
     update()
 
 VAL_FIELDS = {
@@ -111,7 +135,8 @@ initGraph = (metrics, topics, container) ->
   for option, css_class of VAL_FIELDS
     $("._#{css_class}").val(topicGraph.options[option])
 
-  value = if topicGraph.options.simple_weight then "simple" else "weighted"
+  value = topicGraph.options.edge_formula
+  $("input[value='#{value}']").prop("checked", true)
   $("input[value='#{value}']").prop("checked", true)
   $("._colorful").prop("checked", topicGraph.options.colorful)
   topicGraph.updateEdges()
