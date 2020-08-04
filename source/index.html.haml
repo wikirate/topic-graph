@@ -5,6 +5,17 @@
       .col-9
         #topicgraph
       .col-3
+        %h5 Data
+        .form-inline.form-group-inline.mr-1.mb-1
+          .label.mr-1 Source:
+          .form-check-inline
+            %input#dataSource1.form-check-input._data-source{:name => "dataSource", :type => "radio", :value => 1}
+            %label.form-check-label{:for => "dataSource1"}
+              live
+          .form-check-inline
+            %input#dataSource2.form-check-input._data-source{:checked => "checked", :name => "dataSource", :type => "radio", :value => 2}
+            %label.form-check-label{:for => "dataSource2"}
+              cached
         %table.table
           %thead
             %tr
@@ -52,13 +63,13 @@
             .form-group.mr-1
               .label.mr-1 Topic importance Formula
               .form-check
-                %input#formulaRadios1.form-check-input._node-formula{:checked => "checked", :name => "nodeFormulaRadios", :type => "radio", :value => 1}
-                %label.form-check-label{:for => "formulaRadios1"}
+                %input#nodeFormulaRadios1.form-check-input._node-formula{:checked => "checked", :name => "nodeFormulaRadios", :type => "radio", :value => 1}
+                %label.form-check-label{:for => "nodeFormulaRadios1"}
                   Metrics:
                   %span.text-muted more metrics tagged, more important
               .form-check
-                %input#formulaRadios2.form-check-input._node-formula{:name => "nodeFormulaRadios", :type => "radio", :value => 2}
-                %label.form-check-label{:for => "formulaRadios2"}
+                %input#nodeFormulaRadios2.form-check-input._node-formula{:name => "nodeFormulaRadios", :type => "radio", :value => 2}
+                %label.form-check-label{:for => "nodeFormulaRadios2"}
                   Bookmarks:
                   %span.text-muted more bookmarked, more important
             .form-group
@@ -79,8 +90,8 @@
                   Weighted:
                   %span.text-muted metrics tagged with more topics weigh less
               .form-check
-                %input#formulaRadios2.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => 3}
-                %label.form-check-label{:for => "formulaRadios2"}
+                %input#formulaRadios3.form-check-input._connection-formula{:name => "formulaRadios", :type => "radio", :value => 3}
+                %label.form-check-label{:for => "formulaRadios3"}
                   Bookmarked:
                   %span.text-muted metrics more bookmarked weigh more
           #style.tab-pane.fade{"aria-labelledby" => "style-tab", :role => "tabpanel"}
@@ -101,7 +112,19 @@
               #editor
               .btn.btn-primary._apply-config.mt-2
                 Apply
-
+  .modal#mymodal{:role => "dialog", :tabindex => "-1"}
+    .modal-dialog
+      .modal-content
+        .modal-header
+          %h5.modal-title Connecting metrics
+          %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+            %span{"aria-hidden" => "true"} ×
+        .modal-body
+          %p
+        .modal-footer
+          %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Close
   = partial "partials/shared/footer"
+
+
 
 

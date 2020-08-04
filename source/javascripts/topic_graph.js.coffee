@@ -115,7 +115,7 @@ class window.TopicGraph
 
     self = this
     for item in metricData.items
-      if item.topics.length > 1
+      if item.topics? and item.topics.length > 1
         ids = item.topics.map (topic) -> self.topic_ids[topic]
           .sort()
         topic_count_score = 1/(item.topics.length - 1)
@@ -129,7 +129,7 @@ class window.TopicGraph
             @topic_connections[id1][id2].count += 1
             @topic_connections[id1][id2].topic_count_score += topic_count_score
             @topic_connections[id1][id2].bookmark_score += bookmark_score
-            @topic_connections[id1][id2].title += "<br><a href='http://wikirate.org/#{item.name}'>#{item.name}</a>"
+            @topic_connections[id1][id2].title += "<br>#{item.name}"
 
   showEdge: (topic_connection) ->
     if @options.edge_formula == EdgeFormula.simple
@@ -137,7 +137,6 @@ class window.TopicGraph
     else if @options.edge_formula == EdgeFormula.topic_count
       topic_connection.topic_count_score >= @options.edge_threshold
     else
-      debugger
       topic_connection.bookmark_score >= @options.edge_threshold
 
   showNode: (topic) ->
@@ -161,7 +160,7 @@ class window.TopicGraph
             from: parseInt(id1)
             to: parseInt(id2)
             value: connection.count * @options.edge_size
-            title: connection.title
+            metrics: connection.title
           }
 
   updateNodes: () ->
@@ -191,9 +190,50 @@ class window.TopicGraph
     jsyaml.safeDump(@vis_config)
 
   setVisConfig: (yaml) ->
-    debugger
     @vis_config = jsyaml.safeLoad(yaml)
     @network.setOptions(@vis_config)
+
+
+  showLabelsFor: (nodes_with_labels) ->
+    @nodes.update(
+      @nodes.get(
+        fields: ["id", "label_bak"]
+      ).map((node) ->
+        id: node.id
+        label: if node.id in nodes_with_labels then node.label_bak else ""
+      )
+    )
+
+  selectNode: (node, edges) ->
+    @selected_node = node
+    neighbours = @network.getConnectedNodes(@selected_node)
+    @showLabelsFor(neighbours)
+
+    @edges.update(
+      @edges.getIds().map((id) ->
+        { id: id, hidden: id not in edges }
+      )
+    )
+
+  selectEdge: (edge) ->
+    $("#mymodal .modal-body > p").html(edge.metrics)
+    $("#mymodal").show()
+
+  reset: () ->
+    @selected_node = null
+    @nodes.update(
+      @nodes.get(
+        fields: ["id", "label_bak"]
+      ).map((node) ->
+        id: node.id
+        label: node.label_bak
+      )
+    )
+    @edges.update(
+      @edges.getIds().map((id) ->
+        { id: id, hidden: false }
+      )
+    )
 
   render: () ->
     @data = {
@@ -209,44 +249,26 @@ class window.TopicGraph
       self.nodes.update(
         node
       )
+      edges = node
+
+    @network.on "doubleClick", (params) ->
+      selectedNode = params.nodes[0]
+      connectedNodes = self.network.getConnectedNodes(selectedNode)
+      allConnectedNodes = []
+
+      for node in connectedNodes
+        allConnectedNodes = allConnectedNodes.concat(
+          self.network.getConnectedNodes(node)
+        )
+      self.showLabelsFor(allConnectedNodes)
 
     @network.on "click", (params) ->
-      if params.nodes.length < 1 or @selected_node == params.nodes[0]
-        @selected_node = null
-        self.nodes.update(
-          self.nodes.get(
-            fields: ["id", "label_bak"]
-          ).map((node) ->
-            id: node.id
-            label: node.label_bak
-          )
-        )
-        self.edges.update(
-          self.edges.getIds().map((id) ->
-            { id: id, hidden: false }
-          )
-        )
-        return
-
-      @selected_node = params.nodes[0]
-      neighbours = params.nodes
-      self.edges.get(
-        filter: (item) ->
-          item.id in params.edges
-      ).forEach (edge) ->
-        neighbours.push edge.from
-        neighbours.push edge.to
-
-      self.nodes.update(
-        self.nodes.get(
-          fields: ["id", "label_bak"]
-        ).map((node) ->
-          id: node.id
-          label: if node.id in neighbours then node.label_bak else ""
-        )
-      )
-      self.edges.update(
-        self.edges.getIds().map((id) ->
-          { id: id, hidden: id not in params.edges }
-        )
-      )
+      if params.nodes.length > 0
+        if @selected_node == params.nodes[0]
+          self.reset()
+        else
+          self.selectNode(params.nodes[0], params.edges)
+      else if params.edges.length > 0
+        self.selectEdge(self.edges.get(params.edges[0]))
+      else
+        self.reset()

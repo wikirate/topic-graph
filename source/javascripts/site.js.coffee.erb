@@ -1,12 +1,14 @@
 $.fn.select2.defaults.set("theme", "bootstrap4")
 
-#API_HOST = "https://wikirate.org"
-API_HOST = "data"
-METRIC_URL = "#{API_HOST}/Metric.json"
-TOPIC_URL = "#{API_HOST}/topic.json"
+API_HOST_CACHED = "https://wikirate.org/cached"
+API_HOST_LIVE = "https://wikirate.org"
 
 topicGraph = null
 editor = null
+
+DataSource =
+  live: 1
+  cached: 2
 
 EdgeFormula =
   simple: 1
@@ -67,9 +69,8 @@ $(document).ready ->
   $("#configs").select2()
   initAce()
   container = document.getElementById("topicgraph")
-  initGraph(metrics, topics, container)
-  editor.setValue(topicGraph.getVisConfig())
-  # loadGraph("topicgraph")
+  # initGraph(metrics, topics, container)
+  fetchData(API_HOST_CACHED)
 
   $("body").on "change", "._edge-threshold", ->
     topicGraph.options.edge_threshold = parseFloat($(this).val())
@@ -117,10 +118,18 @@ $(document).ready ->
     update()
 
   $("body").on "change", "._node-formula", ->
-    topicGraph.options.node_formula = parseInt($('input._node-formula:checked').val())
     debugger
+    topicGraph.options.node_formula = parseInt($('input._node-formula:checked').val())
     topicGraph.updateNodes()
     update()
+
+  $("body").on "change", "._data-source", ->
+    source = parseInt($('input._data-source:checked').val())
+    if (source == DataSource.live)
+      fetchData(API_HOST_LIVE)
+    else
+      fetchData(API_HOST_CACHED)
+
 
 VAL_FIELDS = {
   edge_threshold: "edge-threshold"
@@ -135,12 +144,12 @@ initGraph = (metrics, topics, container) ->
   for option, css_class of VAL_FIELDS
     $("._#{css_class}").val(topicGraph.options[option])
 
-  value = topicGraph.options.edge_formula
-  $("input[value='#{value}']").prop("checked", true)
-  $("input[value='#{value}']").prop("checked", true)
+  $("input._connection-formula[value='#{topicGraph.options.edge_formula}']").prop("checked", true)
+  $("input._node-formula[value='#{topicGraph.options.node_formula}']").prop("checked", true)
   $("._colorful").prop("checked", topicGraph.options.colorful)
   topicGraph.updateEdges()
   topicGraph.updateNodes()
+  editor.setValue(topicGraph.getVisConfig())
   update()
 
 update = () ->
@@ -152,22 +161,22 @@ update = () ->
   $("._edge-count").text(topicGraph.edges.length)
   $("._node-count").text(topicGraph.nodes.length)
 
-loadGraph = (containerId) ->
+fetchData = (host) ->
   $.ajax(
-    url: METRIC_URL,
+    url: "#{host}/Metric.json?limit=0",
     cache: false,
     dataType: "json",
     type: "GET",
     crossDomain: true,
-    contentType: "application/json",
     headers: {
-      "accept": "application/json",
-      "Access-Control-Allow-Origin":"*",
-      "Access-Control-Allow-Headers": "x-requested-with"
+      accept: "application/json",
   }).done (metricData) ->
-    $.ajax(url: TOPIC_URL, cache: false, dataType: "json", crossDomain: true, "headers": {
-      "accept": "application/json",
-      "Access-Control-Allow-Origin":"*"
+    $.ajax(url: "#{host}/Topic.json?limit=0",
+      cache: false,
+      dataType: "json",
+      crossDomain: true,
+      headers: {
+        accept: "application/json",
     }).done (topicData) ->
       container = document.getElementById("topicgraph")
       initGraph(metricData, topicData, container)
