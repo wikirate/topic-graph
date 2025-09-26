@@ -8,7 +8,7 @@ NodeFormula =
   bookmarks: 2
 
 class window.TopicGraph
-  constructor: (metricData, topicData, @container) ->
+  constructor: (metricData, topicData, @container, default_options) ->
     @topic_ids = {}
     @topic_connections = {}
     @nodes = null
@@ -19,16 +19,7 @@ class window.TopicGraph
     @topic_count = 0
     @topic_connection_count = 0
 
-    @options = {
-      font_size: 20
-      node_size: 1
-      edge_size: 1
-      edge_formula: EdgeFormula.topic_count
-      node_formula: NodeFormula.metrics
-      edge_threshold: 2 # Number of metrics tagged with a topic needed to establish a node
-      node_threshold: 2 # Number of connecting metrics between topics needed to establish an edge
-      colorful: false
-    }
+    @options = default_options
 
     @vis_config =
       nodes:
@@ -108,6 +99,11 @@ class window.TopicGraph
       "answers_url": "https://wikirate.org/2020WoB+Women_on_Board+Answer.json"
     }
 
+    @family_colors = {
+      Social: 1
+      Governance: 2
+      Environment: 3
+    }
     @topics = topicData.items
     @topic_count = @topics.length
     for item in @topics
@@ -141,9 +137,14 @@ class window.TopicGraph
 
   showNode: (topic) ->
     if @options.node_formula == NodeFormula.bookmarks
-      topic.bookmarkers >= @options.node_threshold
+      return false if topic.bookmarkers < @options.node_threshold
     else
-      topic.metrics >= @options.node_threshold
+      return false if topic.metrics < @options.node_threshold
+
+    if @options.topic_frameworks.length > 0
+      return false unless topic.framework in @options.topic_frameworks
+
+    true
 
   setFontSize: (size) ->
     @options.font_size = size
@@ -167,17 +168,16 @@ class window.TopicGraph
     @nodes = new vis.DataSet([])
     for topic in @topics
       if @showNode(topic)
+        fam_color = @family_colors[topic.family]
         group_id = switch
           when @options.colorful then topic.id
-          when topic.name.indexOf("GRI") == 0 then 2
-          when topic.name.indexOf("SDG") == 0 then 3
-          when topic.name.indexOf("G4") == 0 then 4
+          when fam_color then fam_color
           else 1
         value = if @options.node_formula_bookmark then topic.bookmarkers else topic.metrics
         @nodes.add {
           id: topic.id,
-          label: topic.name,
-          label_bak: topic.name
+          label: topic.title,
+          label_bak: "#{topic.framework}: #{topic.name}"
           value: value * @options.node_size
           group: group_id
         }
@@ -192,7 +192,6 @@ class window.TopicGraph
   setVisConfig: (yaml) ->
     @vis_config = jsyaml.safeLoad(yaml)
     @network.setOptions(@vis_config)
-
 
   showLabelsFor: (nodes_with_labels) ->
     @nodes.update(

@@ -28,13 +28,13 @@
 <div class='row red-bg'>
 <div class='col-sm-8 col-md-7 py-4'>
 <h4 class='text-white'>
-translation missing: en.learn_more
+Translation missing: en.learn_more
 </h4>
 <ul class='list-unstyled'></ul>
 </div>
 <div class='col-sm-4 offset-md-1 py-4'>
 <h4 class='text-white'>
-translation missing: en.about
+Translation missing: en.about
 </h4>
 <ul class='list-unstyled'></ul>
 </div>
@@ -62,22 +62,6 @@ Topic Network Map
 <div id='topicgraph'></div>
 </div>
 <div class='col-3'>
-<h5>Data</h5>
-<div class='form-inline form-group-inline mr-1 mb-1'>
-<div class='label mr-1'>Source:</div>
-<div class='form-check-inline'>
-<input class='form-check-input _data-source' id='dataSource1' name='dataSource' type='radio' value='1'>
-<label class='form-check-label' for='dataSource1'>
-live
-</label>
-</div>
-<div class='form-check-inline'>
-<input checked='checked' class='form-check-input _data-source' id='dataSource2' name='dataSource' type='radio' value='2'>
-<label class='form-check-label' for='dataSource2'>
-cached
-</label>
-</div>
-</div>
 <table class='table'>
 <thead>
 <tr>
@@ -101,7 +85,7 @@ cached
 </table>
 <h5 class='mt-3'>Select a configuration</h5>
 <div class='form-group'>
-<select class='w-100' id='configs'>
+<select class='_select2 w-100' id='configs'>
 <option value='default'>
 Default
 </option>
@@ -130,6 +114,10 @@ Chaos
 </ul>
 <div class='tab-content pt-3' id='myTabContent'>
 <div aria-labelledby='filter-tab' class='tab-pane fade show active' id='filter' role='tabpanel'>
+<div class='form-group mr-1'>
+<div class='label mr-1'>Topic framework</div>
+<select class='_select2 _topic-frameworks w-100' multiple='multiple'></select>
+</div>
 <div class='form-group'>
 <div class='label mr-1'>Minimum topic importance</div>
 <input class='form-control _node-threshold mr-3' type='number'>
@@ -234,7 +222,7 @@ Apply
 </div>
 </div>
 </div>
-<div class='black-bg container-fluid'>
+<div class='container-fluid black-bg'>
 <div class='container py-5'>
 <div class='row small mt-4 text-muted'>
 <div class='col-sm-12 border-top text-center pt-3'>

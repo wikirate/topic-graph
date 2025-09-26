@@ -5,17 +5,17 @@
       .col-9
         #topicgraph
       .col-3
-        %h5 Data
-        .form-inline.form-group-inline.mr-1.mb-1
-          .label.mr-1 Source:
-          .form-check-inline
-            %input#dataSource1.form-check-input._data-source{:name => "dataSource", :type => "radio", :value => 1}
-            %label.form-check-label{:for => "dataSource1"}
-              live
-          .form-check-inline
-            %input#dataSource2.form-check-input._data-source{:checked => "checked", :name => "dataSource", :type => "radio", :value => 2}
-            %label.form-check-label{:for => "dataSource2"}
-              cached
+        -# %h5 Data
+        -# .form-inline.form-group-inline.mr-1.mb-1
+        -#   .label.mr-1 Source:
+        -#   .form-check-inline
+        -#     %input#dataSource1.form-check-input._data-source{:name => "dataSource", :type => "radio", :value => 1}
+        -#     %label.form-check-label{:for => "dataSource1"}
+        -#       live
+        -#   .form-check-inline
+        -#     %input#dataSource2.form-check-input._data-source{:checked => "checked", :name => "dataSource", :type => "radio", :value => 2}
+        -#     %label.form-check-label{:for => "dataSource2"}
+        -#       cached
         %table.table
           %thead
             %tr
@@ -34,7 +34,7 @@
 
         %h5.mt-3 Select a configuration
         .form-group
-          %select#configs.w-100
+          %select#configs._select2.w-100
             %option{value: "default"}
               Default
             %option{value: "elite_connections"}
@@ -55,6 +55,10 @@
         
         #myTabContent.tab-content.pt-3
           #filter.tab-pane.fade.show.active{"aria-labelledby" => "filter-tab", :role => "tabpanel"}
+            .form-group.mr-1
+              .label.mr-1 Topic framework
+              %select._select2._topic-frameworks.w-100{ multiple: "multiple" }
+
             .form-group
               .label.mr-1 Minimum topic importance
               %input.form-control._node-threshold.mr-3{type: "number"}

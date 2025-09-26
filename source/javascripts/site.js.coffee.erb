@@ -1,7 +1,6 @@
 $.fn.select2.defaults.set("theme", "bootstrap4")
 
-API_HOST_CACHED = "https://wikirate.org/cached"
-API_HOST_LIVE = "https://wikirate.org"
+API_HOST = "http://localhost:3001/mod/topics/testjson"
 
 topicGraph = null
 editor = null
@@ -24,15 +23,17 @@ configs = {
     font_size: 20
     node_size: 1
     edge_size: 1
+    topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.topic_count
     node_formula: NodeFormula.metrics
     edge_threshold: 2
-    node_threshold: 2
+    node_threshold: 0
     colorful: false
   solar:
     font_size: 20
     node_size: 1
     edge_size: 1
+    topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.topic_count
     node_formula: NodeFormula.metrics
     edge_threshold: 2
@@ -42,6 +43,7 @@ configs = {
     font_size: 20
     node_size: 1
     edge_size: 1
+    topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.simple
     node_formula: NodeFormula.metrics
     edge_threshold: 1
@@ -51,6 +53,7 @@ configs = {
     font_size: 20
     node_size: 1
     edge_size: 1
+    topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.topic_count
     node_formula: NodeFormula.metrics
     edge_threshold: 1.5
@@ -66,11 +69,15 @@ initAce = () ->
   editor.resize()
 
 $(document).ready ->
-  $("#configs").select2()
   initAce()
   container = document.getElementById("topicgraph")
   # initGraph(metrics, topics, container)
-  fetchData(API_HOST_CACHED)
+  fetchData(API_HOST)
+
+  $("body").on "change", "._topic-frameworks", ->
+    topicGraph.options.topic_frameworks = $(this).val()
+    topicGraph.updateNodes()
+    update()
 
   $("body").on "change", "._edge-threshold", ->
     topicGraph.options.edge_threshold = parseFloat($(this).val())
@@ -118,29 +125,29 @@ $(document).ready ->
     update()
 
   $("body").on "change", "._node-formula", ->
-    debugger
     topicGraph.options.node_formula = parseInt($('input._node-formula:checked').val())
     topicGraph.updateNodes()
     update()
 
-  $("body").on "change", "._data-source", ->
-    source = parseInt($('input._data-source:checked').val())
-    if (source == DataSource.live)
-      fetchData(API_HOST_LIVE)
-    else
-      fetchData(API_HOST_CACHED)
+#  $("body").on "change", "._data-source", ->
+#    source = parseInt($('input._data-source:checked').val())
+#    if (source == DataSource.live)
+#      fetchData(API_HOST_LIVE)
+#    else
+#      fetchData(API_HOST_CACHED)
 
 
 VAL_FIELDS = {
   edge_threshold: "edge-threshold"
   node_threshold: "node-threshold"
+  topic_frameworks: "topic-frameworks"
   font_size: "font-size"
   node_size: "node-size"
   edge_size: "edge-size"
 }
 
 initGraph = (metrics, topics, container) ->
-  topicGraph = new TopicGraph(metrics, topics, container)
+  topicGraph = new TopicGraph(metrics, topics, container, configs["default"])
   for option, css_class of VAL_FIELDS
     $("._#{css_class}").val(topicGraph.options[option])
 
@@ -156,27 +163,40 @@ update = () ->
   topicGraph.render()
   for option, value of topicGraph.options
     $("._#{VAL_FIELDS[option]}").val(value)
+  $("._topic-frameworks").trigger("change.select2")
   $("._topic-count").text(topicGraph.topic_count)
   $("._topic-connection-count").text(topicGraph.topic_connection_count)
   $("._edge-count").text(topicGraph.edges.length)
   $("._node-count").text(topicGraph.nodes.length)
 
+initSelects = (container, frameworkData) ->
+  frameworkSelect = $("._topic-frameworks")
+  for item in frameworkData.items
+    frameworkSelect.append "<option value='#{item.name}'>#{item.name}</option>"
+  $("._select2").select2()
+
+ajaxDefaults = {
+  cache: false,
+  dataType: "json",
+  type: "GET",
+  crossDomain: true,
+  headers: {
+    accept: "application/json",
+  }
+}
+
 fetchData = (host) ->
+  container = document.getElementById("topicgraph")
+
   $.ajax(
-    url: "#{host}/Metric.json?limit=0",
-    cache: false,
-    dataType: "json",
-    type: "GET",
-    crossDomain: true,
-    headers: {
-      accept: "application/json",
-  }).done (metricData) ->
-    $.ajax(url: "#{host}/Topic.json?limit=0",
-      cache: false,
-      dataType: "json",
-      crossDomain: true,
-      headers: {
-        accept: "application/json",
-    }).done (topicData) ->
-      container = document.getElementById("topicgraph")
-      initGraph(metricData, topicData, container)
+    Object.assign { url: "#{host}/Topic_Framework.json?limit=0" }, ajaxDefaults
+  ).done (frameworkData) ->
+    initSelects container, frameworkData
+
+  $.ajax(
+    Object.assign { url: "#{host}/Metric.json?limit=0" }, ajaxDefaults
+  ).done (metricData) ->
+    $.ajax(
+      Object.assign { url: "#{host}/Topic.json?limit=0&refilter=true" }, ajaxDefaults
+    ).done (topicData) ->
+      initGraph metricData, topicData, container
