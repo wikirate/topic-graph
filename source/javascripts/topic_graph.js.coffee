@@ -66,7 +66,8 @@ class window.TopicGraph
 
     self = this
     for item in metricData.items
-      topics = item.topics + item.topic_frameworks
+      topics = item.topics
+      topics = topics.concat item.topic_frameworks if item.topic_frameworks?
       if topics? and topics.length > 1
         ids = topics.map (topic) -> self.topic_ids[topic]
           .sort()

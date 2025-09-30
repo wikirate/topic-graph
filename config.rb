@@ -57,8 +57,8 @@ page '/*.txt', layout: false
 set :site_url, ""
 
 
-string = File.read('data/metric.json')
-config[:metric] = string
-
-string = File.read('data/topic.json')
-config[:topic] = string
+# string = File.read('data/metric.json')
+# config[:metric] = string
+#
+# string = File.read('data/topic.json')
+# config[:topic] = string
