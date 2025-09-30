@@ -40,6 +40,6 @@ jobs:
         uses: docker/build-push-action@v6.9.0
         with:
           push: true
-          file: docker/Dockerfile
+          file: docker/dockerfile
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
