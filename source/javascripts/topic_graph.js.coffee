@@ -54,51 +54,6 @@ class window.TopicGraph
         timestep: 0.35
         stabilization: iterations: 150
 
-    @example_topic = {
-      "id": 45466,
-      "name": "Accident",
-      "type": "Topic",
-      "url": "https://wikirate.org/Accident.json",
-      "content": "",
-      "bookmarkers": 0,
-      "metrics": 6,
-      "projects": 0
-    }
-    @example_metric = {
-      "id": 538693,
-      "name": "2020WoB+Women on Board",
-      "type": "Metric",
-      "url": "https://wikirate.org/2020WoB+Women_on_Board.json",
-      "designer": "2020WoB",
-      "title": "Women on Board",
-      "question": "What percentage of people on the company's board of directors are women?",
-      "metric_type": "Researched",
-      "about": "<p><span>2020 Women on Boards conducts research studies about the gender composition of the boards of directors of US companies.</span></p>",
-      "methodology": "<p>To search for a company listed on the 2020 Women on Boards directory, check the database here: <a href=\"https://www.2020wob.com/company-directory\">https://www.2020wob.com/company-directory</a>. See also data in the 2014 report <a href=\"http://www.2020wob.com/sites/default/files/2020GDI-2014Report.pdf\">here</a>.</p>",
-      "value_type": "Number",
-      "value_options": [
-        "Unknown"
-      ],
-      "report_type": "Data Breach Report",
-      "research_policy": "Designer Assessed",
-      "unit": "%",
-      "range": null,
-      "hybrid": "no",
-      "topics": [
-        "Employee",
-        "Gender equality"
-      ],
-      "scores": [
-        "2020WoB+Women on Board+Mariana",
-        "2020WoB+Women on Board+Alex H",
-        "2020WoB+Women on Board+Elizabeth Potter"
-      ],
-      "answers": 3571,
-      "bookmarkers": 6,
-      "projects": 4,
-      "answers_url": "https://wikirate.org/2020WoB+Women_on_Board+Answer.json"
-    }
-
     @family_colors = {
       Social: 1
       Governance: 2
@@ -111,8 +66,9 @@ class window.TopicGraph
 
     self = this
     for item in metricData.items
-      if item.topics? and item.topics.length > 1
-        ids = item.topics.map (topic) -> self.topic_ids[topic]
+      topics = item.topics + item.topic_frameworks
+      if topics? and topics.length > 1
+        ids = topics.map (topic) -> self.topic_ids[topic]
           .sort()
         topic_count_score = 1/(item.topics.length - 1)
         bookmark_score = item.bookmarkers

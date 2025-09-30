@@ -1,6 +1,6 @@
 $.fn.select2.defaults.set("theme", "bootstrap4")
 
-API_HOST = "http://localhost:3001/mod/topics/testjson"
+API_HOST = "http://localhost:4567/"
 
 topicGraph = null
 editor = null
@@ -189,14 +189,14 @@ fetchData = (host) ->
   container = document.getElementById("topicgraph")
 
   $.ajax(
-    Object.assign { url: "#{host}/Topic_Framework.json?limit=0" }, ajaxDefaults
+    Object.assign { url: "#{host}/data/Topic_Framework.json" }, ajaxDefaults
   ).done (frameworkData) ->
     initSelects container, frameworkData
 
   $.ajax(
-    Object.assign { url: "#{host}/Metric.json?limit=0" }, ajaxDefaults
+    Object.assign { url: "#{host}/data/Metric.json" }, ajaxDefaults
   ).done (metricData) ->
     $.ajax(
-      Object.assign { url: "#{host}/Topic.json?limit=0&refilter=true" }, ajaxDefaults
+      Object.assign { url: "#{host}/data/Topic.json" }, ajaxDefaults
     ).done (topicData) ->
       initGraph metricData, topicData, container
