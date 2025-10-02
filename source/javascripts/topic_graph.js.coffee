@@ -54,11 +54,6 @@ class window.TopicGraph
         timestep: 0.35
         stabilization: iterations: 150
 
-    @family_colors = {
-      Social: 1
-      Governance: 2
-      Environment: 3
-    }
     @topics = topicData.items
     @topic_count = @topics.length
     for item in @topics
@@ -71,7 +66,7 @@ class window.TopicGraph
       if topics? and topics.length > 1
         ids = topics.map (topic) -> self.topic_ids[topic]
           .sort()
-        topic_count_score = 1/(item.topics.length - 1)
+        topic_count_score = 1/(topics.length - 1)
         bookmark_score = item.bookmarkers
         for id1, i in ids
           for id2 in ids[i+1..]
@@ -125,7 +120,7 @@ class window.TopicGraph
     @nodes = new vis.DataSet([])
     for topic in @topics
       if @showNode(topic)
-        fam_color = @family_colors[topic.family]
+        fam_color = familyColors[topic.family]
         group_id = switch
           when @options.colorful then topic.id
           when fam_color then fam_color

@@ -1,7 +1,5 @@
 $.fn.select2.defaults.set("theme", "bootstrap4")
 
-API_HOST = "http://localhost:4567/"
-
 topicGraph = null
 editor = null
 
@@ -56,8 +54,8 @@ configs = {
     topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.topic_count
     node_formula: NodeFormula.metrics
-    edge_threshold: 1.5
-    node_threshold: 10
+    edge_threshold: 50
+    node_threshold: 40
     colorful: false
 }
 
@@ -148,6 +146,7 @@ VAL_FIELDS = {
 
 initGraph = (metrics, topics, container) ->
   topicGraph = new TopicGraph(metrics, topics, container, configs["default"])
+  #  window.deleteme = topicGraph
   for option, css_class of VAL_FIELDS
     $("._#{css_class}").val(topicGraph.options[option])
 
@@ -169,11 +168,16 @@ update = () ->
   $("._edge-count").text(topicGraph.edges.length)
   $("._node-count").text(topicGraph.nodes.length)
 
-initSelects = (container, frameworkData) ->
+initFrameworks = (container, frameworkData) ->
   frameworkSelect = $("._topic-frameworks")
   for item in frameworkData.items
     frameworkSelect.append "<option value='#{item.name}'>#{item.name}</option>"
+    for family, i in item.families
+      familyColors[family] = i + 1
+
   $("._select2").select2()
+
+window.familyColors = {}
 
 ajaxDefaults = {
   cache: false,
@@ -192,7 +196,7 @@ fetchData = () ->
   container = document.getElementById("topicgraph")
 
   $.ajax(ajaxArgs "Topic_Framework").done (frameworkData) ->
-    initSelects container, frameworkData
+    initFrameworks container, frameworkData
 
   $.ajax(ajaxArgs "Metric").done (metricData) ->
     $.ajax(ajaxArgs "Topic").done (topicData) ->
