@@ -26,8 +26,8 @@ configs = {
     topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.topic_count
     node_formula: NodeFormula.metrics
-    edge_threshold: 2
-    node_threshold: 0
+    edge_threshold: 3
+    node_threshold: 3
     colorful: false
   solar:
     font_size: 20
@@ -72,7 +72,7 @@ $(document).ready ->
   initAce()
   container = document.getElementById("topicgraph")
   # initGraph(metrics, topics, container)
-  fetchData(API_HOST)
+  fetchData()
 
   $("body").on "change", "._topic-frameworks", ->
     topicGraph.options.topic_frameworks = $(this).val()
@@ -185,18 +185,15 @@ ajaxDefaults = {
   }
 }
 
-fetchData = (host) ->
+ajaxArgs = (type) ->
+  Object.assign { url: "/data/#{type}.json" }, ajaxDefaults
+
+fetchData = () ->
   container = document.getElementById("topicgraph")
 
-  $.ajax(
-    Object.assign { url: "#{host}/data/Topic_Framework.json" }, ajaxDefaults
-  ).done (frameworkData) ->
+  $.ajax(ajaxArgs "Topic_Framework").done (frameworkData) ->
     initSelects container, frameworkData
 
-  $.ajax(
-    Object.assign { url: "#{host}/data/Metric.json" }, ajaxDefaults
-  ).done (metricData) ->
-    $.ajax(
-      Object.assign { url: "#{host}/data/Topic.json" }, ajaxDefaults
-    ).done (topicData) ->
+  $.ajax(ajaxArgs "Metric").done (metricData) ->
+    $.ajax(ajaxArgs "Topic").done (topicData) ->
       initGraph metricData, topicData, container
