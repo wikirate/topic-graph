@@ -24,8 +24,8 @@ configs = {
     topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.topic_count
     node_formula: NodeFormula.metrics
-    edge_threshold: 3
-    node_threshold: 3
+    edge_threshold: 10
+    node_threshold: 40
     colorful: false
   solar:
     font_size: 20
@@ -41,11 +41,21 @@ configs = {
     font_size: 20
     node_size: 1
     edge_size: 1
-    topic_frameworks: ['Wikirate ESG Topics']
+    topic_frameworks: []
+    edge_formula: EdgeFormula.simple
+    node_formula: NodeFormula.metrics
+    edge_threshold: 5
+    node_threshold: 5
+    colorful: true
+  gri_starter:
+    font_size: 10
+    node_size: 1
+    edge_size: 1
+    topic_frameworks: ["GRI Standards"]
     edge_formula: EdgeFormula.simple
     node_formula: NodeFormula.metrics
     edge_threshold: 1
-    node_threshold: 1
+    node_threshold: 3
     colorful: true
   elite_connections:
     font_size: 20
@@ -54,8 +64,8 @@ configs = {
     topic_frameworks: ['Wikirate ESG Topics']
     edge_formula: EdgeFormula.topic_count
     node_formula: NodeFormula.metrics
-    edge_threshold: 50
-    node_threshold: 40
+    edge_threshold: 40
+    node_threshold: 30
     colorful: false
 }
 

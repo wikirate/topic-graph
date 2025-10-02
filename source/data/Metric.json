@@ -50913,10 +50913,10 @@
       "formula": "(function() {\n\n\n}).call(this);\n",
       "rubric": null,
       "variables": "",
-      "answer": 134899,
+      "answer": 134902,
       "bookmarkers": 12,
       "datasets": 13,
-      "companies": 134899,
+      "companies": 134902,
       "calculations": [
         "https://wikirate.org/Core+ILO_Region.json",
         "https://wikirate.org/Core+Country.json",
@@ -65632,10 +65632,10 @@
           "metric": "~5456201"
         }
       ],
-      "answer": 134873,
+      "answer": 134877,
       "bookmarkers": 5,
       "datasets": 6,
-      "companies": 134872,
+      "companies": 134876,
       "calculations": [],
       "answers_url": "https://wikirate.org/Core+Country+Answer.json"
     },
@@ -92918,10 +92918,10 @@
           "metric": "~5456201"
         }
       ],
-      "answer": 134899,
+      "answer": 134903,
       "bookmarkers": 0,
       "datasets": 0,
-      "companies": 134899,
+      "companies": 134903,
       "calculations": [],
       "answers_url": "https://wikirate.org/Core+ILO_Region+Answer.json"
     },
@@ -189501,10 +189501,10 @@
           "name": "c2"
         }
       ],
-      "answer": 137509,
+      "answer": 137513,
       "bookmarkers": 0,
       "datasets": 0,
-      "companies": 135096,
+      "companies": 135100,
       "calculations": [],
       "answers_url": "https://wikirate.org/GreenDex+Country+Answer.json"
     },
@@ -192272,7 +192272,9 @@
       "bookmarkers": 0,
       "datasets": 2,
       "companies": 88,
-      "calculations": [],
+      "calculations": [
+        "https://wikirate.org/Wikirate_International_e_V+Readability_of_Report_Formats.json"
+      ],
       "answers_url": "https://wikirate.org/Wikirate_International_e_V+Report_format+Answer.json"
     },
     {
@@ -192765,7 +192767,9 @@
         "Wikirate ESG Topics+Annual Reporting"
       ],
       "topic_frameworks": [],
-      "scores": [],
+      "scores": [
+        "Wikirate International e.V.+Integrated indicator codes+Wikirate Research Team"
+      ],
       "formula": "(function() {\n\n\n}).call(this);\n",
       "rubric": null,
       "variables": "",
@@ -192773,7 +192777,9 @@
       "bookmarkers": 0,
       "datasets": 2,
       "companies": 88,
-      "calculations": [],
+      "calculations": [
+        "https://wikirate.org/Wikirate_International_e_V+Integrated_indicator_codes+Wikirate_Research_Team.json"
+      ],
       "answers_url": "https://wikirate.org/Wikirate_International_e_V+Integrated_indicator_codes+Answer.json"
     },
     {
@@ -201702,6 +201708,123 @@
       "companies": 0,
       "calculations": [],
       "answers_url": "https://wikirate.org/BankTrack+5_3_Environmental_rights_as_human_rights+Answer.json"
+    },
+    {
+      "id": 22420463,
+      "name": "Wikirate International e.V.+Readability of Report Formats",
+      "type": "Metric",
+      "url": "https://wikirate.org/Wikirate_International_e_V+Readability_of_Report_Formats.json",
+      "designer": "Wikirate International e.V.",
+      "title": "Readability of Report Formats",
+      "question": "What is the highest readability level of the formats in which the company publishes its non-financial report?",
+      "metric_type": "Formula",
+      "about": null,
+      "methodology": null,
+      "value_type": "Multi-Category",
+      "value_options": [
+        "Inline machine-readable structured data",
+        "Structured reporting format",
+        "Combined static formats",
+        "Structured tabular format",
+        "Text-based static format",
+        "Image-based static format",
+        "No disclosure"
+      ],
+      "report_type": null,
+      "assessment": "Community Assessed",
+      "unit": null,
+      "range": null,
+      "hybrid": "no",
+      "topics": [
+        "Wikirate ESG Topics+Governance",
+        "Wikirate ESG Topics+Transparency",
+        "Wikirate ESG Topics+Sustainability & ESG Reporting",
+        "Wikirate ESG Topics+Sustainability Reporting",
+        "Wikirate ESG Topics+Integrated Reporting",
+        "Wikirate ESG Topics+Annual Reporting"
+      ],
+      "topic_frameworks": [],
+      "scores": [
+        "Wikirate International e.V.+Readability of Report Formats+Wikirate Research Team"
+      ],
+      "formula": "(function() {\n  var getAccessibilityCategory;\n\n  getAccessibilityCategory = function(report_formats) {\n    var f, formats, has, hasAny, hasDoc, i, len, onlyOne;\n    formats = (report_formats != null ? report_formats : []).map(function(s) {\n      return (\"\" + s).trim().toLowerCase();\n    });\n    has = {\n      pdfImage: false,\n      pdfText: false,\n      webHtml: false,\n      sheet: false,\n      xbrlStandalone: false,\n      xbrlInline: false,\n      noReport: false\n    };\n    for (i = 0, len = formats.length; i < len; i++) {\n      f = formats[i];\n      if (/no report available/.test(f)) {\n        has.noReport = true;\n      } else if (/pdf.*image/.test(f)) {\n        has.pdfImage = true;\n      } else if (/^pdf|pdf.*text|text.*pdf/.test(f)) {\n        has.pdfText = true;\n      } else if (/web.*html|^html$|^xhtml$/.test(f)) {\n        has.webHtml = true;\n      } else if (/spreadsheet|excel|xlsx|csv/.test(f)) {\n        has.sheet = true;\n      } else if (/(inline|ixbrl).*xbrl|^ixbrl$|inline xbrl|xhtml.*xbrl/.test(f)) {\n        has.xbrlInline = true;\n      } else if (/standalone.*xbrl|^xbrl$/.test(f && !/(inline|ixbrl)/.test(f))) {\n        has.xbrlStandalone = true;\n      }\n    }\n    hasDoc = has.pdfText || has.webHtml;\n    hasAny = has.pdfImage || has.pdfText || has.webHtml || has.sheet || has.xbrlStandalone || has.xbrlInline;\n    onlyOne = Object.values(has).filter(function(v) {\n      return v;\n    }).length === 1;\n    if (has.xbrlInline) {\n      return \"Inline machine-readable structured data\";\n    }\n    if (has.xbrlStandalone && hasDoc) {\n      return \"Structured reporting format\";\n    }\n    if ((has.pdfText && has.webHtml) || (hasDoc && has.sheet)) {\n      return \"Combined static formats\";\n    }\n    if (has.sheet) {\n      return \"Structured tabular format\";\n    }\n    if (hasDoc) {\n      return \"Text-based static format\";\n    }\n    if (has.pdfImage && onlyOne) {\n      return \"Image-based static format\";\n    }\n    if ((has.noReport && onlyOne) || !hasAny) {\n      return \"No disclosure\";\n    }\n  };\n\n  getAccessibilityCategory(report_formats);\n\n}).call(this);\n",
+      "rubric": null,
+      "variables": [
+        {
+          "metric": "~21456528",
+          "name": "report_formats"
+        }
+      ],
+      "answer": 0,
+      "bookmarkers": 0,
+      "datasets": 0,
+      "companies": 0,
+      "calculations": [
+        "https://wikirate.org/Wikirate_International_e_V+Readability_of_Report_Formats+Wikirate_Research_Team.json"
+      ],
+      "answers_url": "https://wikirate.org/Wikirate_International_e_V+Readability_of_Report_Formats+Answer.json"
+    },
+    {
+      "id": 22420473,
+      "name": "Wikirate International e.V.+Readability of Report Formats+Wikirate Research Team",
+      "type": "Metric",
+      "url": "https://wikirate.org/Wikirate_International_e_V+Readability_of_Report_Formats+Wikirate_Research_Team.json",
+      "designer": "Wikirate International e.V.",
+      "title": "Readability of Report Formats",
+      "question": "What score did the company achieve for this indicator in the Reporting Integrity Index?",
+      "metric_type": "score",
+      "about": null,
+      "methodology": null,
+      "value_type": null,
+      "value_options": [],
+      "report_type": null,
+      "assessment": "Community Assessed",
+      "unit": null,
+      "range": null,
+      "hybrid": "no",
+      "topics": [],
+      "topic_frameworks": [],
+      "scores": [],
+      "formula": "(function() {\n\n\n}).call(this);\n",
+      "rubric": "{\"Inline machine-readable structured data\":\"10\",\"Structured reporting format\":\"8\",\"Combined static formats\":\"6\",\"Structured tabular format\":\"5\",\"Text-based static format\":\"4\",\"Image-based static format\":\"1\",\"No disclosure\":\"0\"}",
+      "variables": "",
+      "answer": 0,
+      "bookmarkers": 0,
+      "datasets": 0,
+      "companies": 0,
+      "calculations": [],
+      "answers_url": "https://wikirate.org/Wikirate_International_e_V+Readability_of_Report_Formats+Wikirate_Research_Team+Answer.json"
+    },
+    {
+      "id": 22420480,
+      "name": "Wikirate International e.V.+Integrated indicator codes+Wikirate Research Team",
+      "type": "Metric",
+      "url": "https://wikirate.org/Wikirate_International_e_V+Integrated_indicator_codes+Wikirate_Research_Team.json",
+      "designer": "Wikirate International e.V.",
+      "title": "Integrated indicator codes",
+      "question": "What score did the company achieve for this indicator in the Reporting Integrity Index?",
+      "metric_type": "score",
+      "about": null,
+      "methodology": null,
+      "value_type": null,
+      "value_options": [],
+      "report_type": null,
+      "assessment": "Community Assessed",
+      "unit": null,
+      "range": null,
+      "hybrid": "no",
+      "topics": [],
+      "topic_frameworks": [],
+      "scores": [],
+      "formula": "(function() {\n\n\n}).call(this);\n",
+      "rubric": "{\"Alongside disclosures (in line or on the same page)\":\"10\",\"Index with page references\":\"5\",\"Other\":\"\",\"No\":\"0\"}",
+      "variables": "",
+      "answer": 0,
+      "bookmarkers": 0,
+      "datasets": 0,
+      "companies": 0,
+      "calculations": [],
+      "answers_url": "https://wikirate.org/Wikirate_International_e_V+Integrated_indicator_codes+Wikirate_Research_Team+Answer.json"
     }
   ],
   "links": [],
@@ -201709,6 +201832,6 @@
   "html_url": "https://wikirate.org/Metric",
   "created_at": "2015-04-22 18:36:26 UTC",
   "updated_at": "2023-09-04 13:20:57 UTC",
-  "requested_at": "2025-10-01 16:40:37 UTC",
+  "requested_at": "2025-10-02 17:31:36 UTC",
   "license": "Wikirate.org, licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0). See https://wikirate.org/Attribution_Guide."
 }
