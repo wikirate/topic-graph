@@ -58,5 +58,5 @@ RUN chmod +x /topic-graph/start.sh
 # Expose port 80 to access the site
 EXPOSE 80
 
-# Use the startup script as the main command
-CMD ["/topic-graph/start.sh"]
+# # Use the startup script as the main command
+# CMD ["/topic-graph/start.sh"]
