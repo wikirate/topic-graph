@@ -199,15 +199,23 @@ ajaxDefaults = {
   }
 }
 
-ajaxArgs = (type) ->
-  Object.assign { url: "/data/#{type}.json" }, ajaxDefaults
+wikirateRequest = (type) ->
+  urlRequest "https://wikirate.org/#{type}.json"
+
+urlRequest = (url) ->
+  Object.assign { url: url }, ajaxDefaults
 
 fetchData = () ->
   container = document.getElementById("topicgraph")
 
-  $.ajax(ajaxArgs "Topic_Framework").done (frameworkData) ->
+  $.ajax(wikirateRequest "Topic_Framework").done (frameworkData) ->
     initFrameworks container, frameworkData
 
-  $.ajax(ajaxArgs "Metric").done (metricData) ->
-    $.ajax(ajaxArgs "Topic").done (topicData) ->
-      initGraph metricData, topicData, container
+  $.ajax(wikirateRequest "Metric+:file").done (mFile) ->
+    $.ajax(urlRequest mFile.content).done (metricData) ->
+      $.ajax(wikirateRequest "Topic+:file").done (tFile) ->
+        $.ajax(urlRequest tFile.content).done (topicData) ->
+          initGraph metricData, topicData, container
+
+
+          # https://wikirate-production-storage.fra1.cdn.digitaloceanspaces.com/files/21474963/52268083.json?_=1763396846408
