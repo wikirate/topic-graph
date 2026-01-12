@@ -41,7 +41,6 @@ class window.TopicGraph
             enabled: true
             min: 20
             max: 50
-      improvedLayout: false
       interaction:
         hover: true
       physics:
@@ -92,7 +91,7 @@ class window.TopicGraph
     if @options.node_formula == NodeFormula.bookmarks
       return false if topic.bookmarkers < @options.node_threshold
     else
-      return false if topic.metrics < @options.node_threshold
+      return false if topic.metrics.count < @options.node_threshold
 
     if @options.topic_frameworks.length > 0
       return false unless topic.framework in @options.topic_frameworks
@@ -121,19 +120,29 @@ class window.TopicGraph
     @nodes = new vis.DataSet([])
     for topic in @topics
       if @showNode(topic)
-        fam_color = familyColors[topic.family]
-        group_id = switch
-          when @options.colorful then topic.id
-          when fam_color then fam_color
-          else 1
-        value = if @options.node_formula_bookmark then topic.bookmarkers else topic.metrics
         @nodes.add {
           id: topic.id,
           label: topic.title,
           label_bak: "#{topic.framework}: #{topic.name}"
-          value: value * @options.node_size
-          group: group_id
+          value: @nodeValue(topic)
+          group: @nodeGroupID(topic)
         }
+
+  nodeGroupID: (topic) ->
+    if @options.colorful
+      topic.id
+    else if (fam_color = familyColors[topic.family])
+      fam_color
+    else
+      1
+
+  nodeValue: (topic) ->
+    rawValue =
+      if @options.node_formula_bookmark
+        topic.bookmarkers
+      else
+        topic.metrics.count
+    rawValue * @options.node_size
 
   loadConfig: (options) ->
       @options = options
