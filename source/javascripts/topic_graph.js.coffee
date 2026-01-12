@@ -41,6 +41,7 @@ class window.TopicGraph
             enabled: true
             min: 20
             max: 50
+      improvedLayout: false
       interaction:
         hover: true
       physics:
